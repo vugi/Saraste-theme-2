@@ -1,0 +1,7 @@
+Tämä on Sarasteen teemaa varten ladattu custom-versio bootstrapista, generoitu täällä: http://twitter.github.com/bootstrap/download.html
+
+Muutokset ovat:
+- 16 columnia
+- columnin leveys 40px
+- sisältää responsiiviset ominaisuudet
+- isojen näyttöjen responsiivinen ulkoasu tiputettu pois

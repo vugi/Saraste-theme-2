@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Memphis LT Std Medium Bold';
+    src: url('memphisltstd-bold-webfont.eot');
+    src: url('memphisltstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('memphisltstd-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Memphis LT Std Medium Bold Italic';
+    src: url('memphisltstd-bolditalic-webfont.eot');
+    src: url('memphisltstd-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('memphisltstd-bolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Memphis LT Std Extra Bold Regular';
+    src: url('memphisltstd-extrabold-webfont.eot');
+    src: url('memphisltstd-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('memphisltstd-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Memphis LT Std Light Regular';
+    src: url('memphisltstd-light-webfont.eot');
+    src: url('memphisltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('memphisltstd-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Memphis LT Std Light Italic';
+    src: url('memphisltstd-lightitalic-webfont.eot');
+    src: url('memphisltstd-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('memphisltstd-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Memphis LT Std Medium Regular';
+    src: url('memphisltstd-medium-webfont.eot');
+    src: url('memphisltstd-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('memphisltstd-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Memphis LT Std Medium Italic';
+    src: url('memphisltstd-mediumitalic-webfont.eot');
+    src: url('memphisltstd-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('memphisltstd-mediumitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

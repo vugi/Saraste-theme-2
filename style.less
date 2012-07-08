@@ -1,7 +1,91 @@
-﻿//@import url('/css/fonts.css');
+﻿@import "lib/bootstrap/less/bootstrap.less";
 
-@red: #842210;
+body {
+	background: #eee;
+	padding: 0 10px;
+}
 
-h3 {
-	color: @red;
+#grid {
+	background: white;
+	padding: 0 10px;
+}
+
+header {
+	.makeRow();
+	
+	position: relative;
+	z-index: 1;
+	
+	img {
+		float:left;
+		margin-right: 10px;
+		margin-left: -25px
+	}
+	
+	div {
+		margin-left: 20px;
+		margin-top: 100px;
+		
+		h1 {
+			font-size: 24px;
+			color: white;
+			background: rgba(0,0,0,0.3);
+			padding: 5px;
+			height: 70px;
+		}
+		
+		nav {
+			background: url(img/navbar-bg.png) no-repeat;
+			height: 40px;
+			border-bottom-right-radius: 20px;
+			margin-left: 20px
+		}
+	}
+}
+
+#cover {
+	margin-bottom: -180px;
+}
+
+section#content {
+	.makeRow();
+	
+	article {
+		.makeColumn(10)
+	}
+	
+	aside {
+		.makeColumn(6)
+	}
+}
+
+aside .featured {
+	.makeRow();
+	div {
+		.makeColumn(3);
+	}
+}
+
+#recent {
+	.makeRow();
+	
+	div {
+		.makeColumn(5)
+	}
+}
+
+footer {
+	background: darkgrey;
+	.makeRow();
+	
+	div {
+		.makeColumn(8);
+	}
+	address {
+		.makeColumn(4);
+	}
+	img {
+		.makeColumn(4);
+	}
+	
 }

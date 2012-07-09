@@ -1,7 +1,7 @@
 ﻿@import "lib/bootstrap/less/bootstrap.less";
 
 body {
-	background: #eee;
+	background: @bodyBackground;
 	padding: 0 10px;
 }
 
@@ -29,16 +29,16 @@ header {
 		h1 {
 			font-size: 24px;
 			color: white;
-			background: rgba(0,0,0,0.3);
 			padding: 5px;
 			height: 70px;
+			#translucent > .background(@black, 0.4);
 		}
 		
 		nav {
 			background: url(img/navbar-bg.png) no-repeat;
 			height: 40px;
-			border-bottom-right-radius: 20px;
-			margin-left: 20px
+			margin-left: 20px;
+			.border-radius(0 0 20px 20px)
 		}
 	}
 }
@@ -51,26 +51,29 @@ section#content {
 	.makeRow();
 	
 	article {
-		.makeColumn(10)
+		.makeColumn(10);
+		#recent {
+			.makeRow();
+			
+			div {
+				.makeColumn(5)
+			}
+		}
+		.meta {
+			margin-bottom: 0;
+			font-size: 11px;
+			color: @grayLight;
+		}
 	}
 	
 	aside {
-		.makeColumn(6)
-	}
-}
-
-aside .featured {
-	.makeRow();
-	div {
-		.makeColumn(3);
-	}
-}
-
-#recent {
-	.makeRow();
-	
-	div {
-		.makeColumn(5)
+		.makeColumn(6);
+		.featured {
+			.makeRow();
+			div {
+				.makeColumn(3);
+			}
+		}
 	}
 }
 

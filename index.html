@@ -2,9 +2,10 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
 	<title>Saraste</title>
 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="stylesheet/less" type="text/css" href="style.less" />
 	
@@ -17,10 +18,10 @@
 
 <body>
 	<div id="grid" class="container">
-		<img src="http://placehold.it/940x400" alt="" id="cover">
+		<img src="http://placehold.it/940x400/d9b683/ffffff" alt="" id="cover">
 		<header>
-			<img src="img/saraste-logo-badge.png" alt="" />
-			<h1>Saraste, Pääkaupunkiseudun Partiolaisten piirileiri<br>Evo, Hämeenlinna 30.7.&ndash;8.7.2012</h1>
+			<img src="img/saraste-logo-badge.png" alt="" id="logo">
+			<h1><span class="visible-desktop">Saraste, </span>Pääkaupunkiseudun Partiolaisten piirileiri<span class="hidden-phone"><br>Evo, Hämeenlinna 30.7.&ndash;8.7.2012</span></h1>
 			<nav>
 				<div class="navbar">
 					<div class="navbar-inner">
@@ -28,13 +29,13 @@
 
 							<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 							<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
 							</a>
 
 							<!-- Be sure to leave the brand out there if you want it shown -->
-							<a class="brand" style="display: none;" href="#">Project name</a>
+							<a class="brand" href="#"><img src="img/saraste-logo-nav.png" alt="Saraste 2012"></a>
 
 							<!-- Everything you want hidden at 940px or less, place within here -->
 							<div class="nav-collapse">
@@ -55,7 +56,6 @@
 								</ul>
 								<!-- .nav, .navbar-search, .navbar-form, etc -->
 							</div>
-
 						</div>
 					</div>
 				</div>

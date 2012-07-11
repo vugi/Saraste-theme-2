@@ -1,18 +1,89 @@
 ﻿@import "lib/bootstrap/less/bootstrap";
+
+/* ==========================================================================
+		CUSTOM GRID
+		https://github.com/twitter/bootstrap/issues/2448
+		https://gist.github.com/2834636
+   ========================================================================== */
+   
+#responsive-grid {   
+    .grid(@gridColumnWidth, @gridGutterWidth){   //Generate our custom grid
+        //Define styles for our custom grid (same as normal, but added width=auto version
+        .span (@columns) when(isNumber(@gridColumnWidth)){ 
+            width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
+            float: left;
+            margin-left: @gridGutterWidth;
+        }
+        .span (@columns) when(@gridColumnWidth = auto){ 
+            float: none;
+            display: block;
+            width: auto;
+            margin: 0;
+        }
+        .row() {
+            margin-left: @gridGutterWidth * -1;
+            .clearfix();
+        }
+        .row() when(@gridColumnWidth = auto){ 
+            margin-left: 0;
+        }
+        .offset (@columns) {
+            margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
+        }
+		
+		//Grid elements
+		
+		header { .row(); }
+		
+		section#content {
+			.row();
+			
+			article {
+				.span(10);
+				#recent {
+					.row();
+					div { .span(5); }
+				}
+			}
+			
+			aside {
+				.span(6);
+				.featured {
+					.row();
+					div { .span(3);	}
+				}
+			}
+		}
+
+		footer {
+			.row();
+			div { .span(8); }
+			address { .span(4); }
+			img { .span(4);	}
+		}
+    }
+}
+
+// Custom grid (default size)
+#responsive-grid > .grid(40px, 20px);
+
 @import "lib/bootstrap/less/responsive";
+
+/* ==========================================================================
+		MAIN ELEMENTS
+   ========================================================================== */
 
 body {
 	background: @bodyBackground;
 	padding: 0 10px;
 }
 
-#grid {
+#responsive-grid {
 	background: white;
 	padding: 0 10px;
 }
 
 header {
-	.makeRow();
 	position: relative;
 	z-index: 1;
 	
@@ -31,7 +102,7 @@ header {
 	}
 	
 	nav {
-		height: @navbarHeight;
+		height: 40px;
 		margin-left: 20px;
 		
 		.navbar-inner {
@@ -53,7 +124,6 @@ header {
 		}		
 	}
 }
-
 #cover {
 	margin-bottom: -80px;
 }
@@ -61,47 +131,17 @@ header {
 
 
 section#content {
-	.makeRow();
+	margin-top: 20px;
 	
 	article {
-		.makeColumn(10);
-		.makeRow();
-		#recent {
-			.makeRow();
-			div {
-				.makeColumn(5)
-			}
-		}
 		.meta {
 			margin-bottom: 0;
 			font-size: 11px;
 			color: @grayLight;
 		}
 	}
-	
-	aside {
-		.makeColumn(6);
-		.featured {
-			.makeRow();
-			div {
-				.makeColumn(3);
-			}
-		}
-	}
 }
 
 footer {
-	background: darkgrey;
-	.makeRow();
-	
-	div {
-		.makeColumn(8);
-	}
-	address {
-		.makeColumn(4);
-	}
-	img {
-		.makeColumn(4);
-	}
-	
+	background: darkgrey;	
 }

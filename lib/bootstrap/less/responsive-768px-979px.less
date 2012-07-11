@@ -2,16 +2,20 @@
 // ----------------------------------
 
 @media (min-width: 768px) and (max-width: 979px) {
+	// Custom grid
+	@gridColumnWidth: 31px;
+	@gridGutterWidth: 16px;
 
-  // Fixed grid
-  #grid > .core(31px, 17px);
+	#responsive-grid > .grid(@gridColumnWidth, @gridGutterWidth);
 
-  // Fluid grid
-  #grid > .fluid(5.801104972%, 2.762430939%);
+	// Fixed grid
+	#grid > .core(@gridColumnWidth, @gridGutterWidth);
 
-  // Input grid
-  #grid > .input(42px, 20px);
+	// Fluid grid
+	#grid > .fluid(5.801104972%, 2.762430939%);
 
-  // No need to reset .thumbnails here since it's the same @gridGutterWidth
-  
+	// Input grid
+	#grid > .input(42px, 20px);
+
+	// No need to reset .thumbnails here since it's the same @gridGutterWidth
 }

@@ -95,6 +95,11 @@
 // --------------------------------------------------
 
 @media (max-width: 767px) {
+	 // Custom grid
+    @gridColumnWidth: auto;
+    @gridGutterWidth: 0;
+
+    #responsive-grid > .grid(@gridColumnWidth, @gridGutterWidth);
 	
 	#logo {
 		width: 30%;

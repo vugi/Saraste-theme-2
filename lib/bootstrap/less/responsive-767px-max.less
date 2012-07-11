@@ -2,7 +2,13 @@
 // ---------------------
 
 @media (max-width: 480px) {
+	
+	// Custom grid
+	@gridColumnWidth: auto;
+	@gridGutterWidth: 0;
 
+	#responsive-grid > .grid(@gridColumnWidth, @gridGutterWidth);
+	
 	body {
 		padding: 0;
 		background: transparent;
@@ -28,7 +34,18 @@
 			right: 10px;
 		}
 	}
-
+	
+	aside {
+		padding-top: 15px;
+		margin-top: 15px;
+		border-top: 1px solid @grayLighter;
+		text-align: center;
+	}
+	
+	#recent {
+		text-align: center;
+	}
+	
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
@@ -90,27 +107,21 @@
 }
 
 
-
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
 
 @media (max-width: 767px) {
-	 // Custom grid
-    @gridColumnWidth: auto;
-    @gridGutterWidth: 0;
 
-    #responsive-grid > .grid(@gridColumnWidth, @gridGutterWidth);
-	
 	#logo {
 		width: 30%;
 		margin: -50px 10px 0 -10px !important;
 	}
 	
-  // Padding to set content in a bit
-  body {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+	// Padding to set content in a bit
+	body {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
   
   
 

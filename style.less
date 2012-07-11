@@ -61,6 +61,49 @@
 			address { .span(4); }
 			img { .span(4);	}
 		}
+		
+		@media (min-width: 660px) and (max-width: 979px) {
+			section#content {
+				.row();
+				
+				article {
+					.span(12);
+					#recent {
+						.row();
+						div { .span(6); }
+					}
+				}
+				
+				aside {
+					.span(4);
+					.featured {
+						.row();
+						div { .span(4);	}
+					}
+				}
+			}
+		}		
+		@media (min-width: 481px) and (max-width: 659px) {
+			section#content {
+				.row();
+				
+				article {
+					.span(16);
+					#recent {
+						.row();
+						div { .span(8); }
+					}
+				}
+				
+				aside {
+					.span(16);
+					.featured {
+						.row();
+						div { .span(4);	}
+					}
+				}
+			}
+		}
     }
 }
 
@@ -143,5 +186,6 @@ section#content {
 }
 
 footer {
+	margin-top: 20px;
 	background: darkgrey;	
 }

@@ -8,13 +8,22 @@
 	@gridGutterWidth: 0;
 
 	#responsive-grid > .grid(@gridColumnWidth, @gridGutterWidth);
-	
+
 	body {
-		padding: 0;
+		padding: 60px 4% 0 4% !important;
 		background: transparent;
-		padding-top: 60px;
+		width: 92%;
 	}
 	
+	#responsive-grid {
+		width: 94%;
+		padding: 0 3%;
+	}
+
+	section#content, article {
+		width: 100%;
+	}
+
 	#cover {
 		display: none;
 	}
@@ -39,11 +48,6 @@
 		padding-top: 15px;
 		margin-top: 15px;
 		border-top: 1px solid @grayLighter;
-		text-align: center;
-	}
-	
-	#recent {
-		text-align: center;
 	}
 	
   // Smooth out the collapsing/expanding nav
@@ -110,7 +114,12 @@
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
 
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
+	// Fluid grid
+	@gridColumnWidth: 4.75%;
+	@gridGutterWidth: 1.5%;
+
+	#responsive-grid > .grid(@gridColumnWidth, @gridGutterWidth);
 
 	#logo {
 		width: 30%;

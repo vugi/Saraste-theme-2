@@ -31,79 +31,58 @@
             margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
         }
 		
-		//Grid elements
+	//Grid elements
+	
+	header { .row(); }
+	
+	section#content {
+		.row();
 		
-		header { .row(); }
+		article {
+			.span(10);
+			#recent {
+				.row();
+				div { .span(5); }
+			}
+		}
 		
+		aside {
+			.span(6);
+			.featured {
+				.row();
+				div { .span(3);	}
+			}
+		}
+	}
+
+	footer {
+		.row();
+		div { .span(8); }
+		address { .span(4); }
+		img { .span(4);	}
+	}
+	
+	@media (min-width: 481px) and (max-width: 979px) {
 		section#content {
 			.row();
 			
 			article {
-				.span(10);
+				.span(12);
 				#recent {
 					.row();
-					div { .span(5); }
+					div { .span(6); }
 				}
 			}
 			
 			aside {
-				.span(6);
+				.span(4);
 				.featured {
 					.row();
-					div { .span(3);	}
+					div { width: 100%; }
 				}
 			}
 		}
-
-		footer {
-			.row();
-			div { .span(8); }
-			address { .span(4); }
-			img { .span(4);	}
-		}
-		
-		@media (min-width: 660px) and (max-width: 979px) {
-			section#content {
-				.row();
-				
-				article {
-					.span(12);
-					#recent {
-						.row();
-						div { .span(6); }
-					}
-				}
-				
-				aside {
-					.span(4);
-					.featured {
-						.row();
-						div { .span(4);	}
-					}
-				}
-			}
-		}		
-		@media (min-width: 481px) and (max-width: 659px) {
-			section#content {
-				.row();
-				
-				article {
-					.span(16);
-					#recent {
-						.row();
-						div { .span(8); }
-					}
-				}
-				
-				aside {
-					.span(16);
-					.featured {
-						.row();
-						div { .span(4);	}
-					}
-				}
-			}
-		}
+	}
     }
 }
 
@@ -175,6 +154,7 @@ header {
 
 section#content {
 	margin-top: 20px;
+	position: relative;
 	
 	article {
 		.meta {

@@ -50,6 +50,25 @@
 		border-top: 1px solid @grayLighter;
 	}
 	
+	footer {
+		section#sitemap {
+			ul {
+				li {
+					width: 49%;
+					ul {
+						li {
+							width: auto;
+							max-width: none !important;
+						}
+					}
+				}
+			}
+		}
+		div {
+			clear: both;
+		}
+	}
+	
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
@@ -110,7 +129,6 @@
 
 }
 
-
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
 
@@ -130,6 +148,21 @@
 	body {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+	
+	footer {
+		section#sitemap {
+			ul {
+				li {
+					width: 150px;
+					ul {
+						li {
+							max-width: none !important;
+						}
+					}
+				}
+			}
+		}
 	}
   
   

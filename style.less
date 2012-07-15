@@ -28,61 +28,64 @@
             margin-left: 0;
         }
         .offset (@columns) {
-            margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
+			margin-left: (40 * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
         }
 		
-	//Grid elements
-	
-	header { .row(); }
-	
-	section#content {
-		.row();
+		//Grid elements
 		
-		article {
-			.span(10);
-			#recent {
-				.row();
-				div { .span(5); }
-			}
-		}
+		header { .row(); }
 		
-		aside {
-			.span(6);
-			.featured {
-				.row();
-				div { .span(3);	}
-			}
-		}
-	}
-
-	footer {
-		.row();
-		div { .span(8); }
-		address { .span(4); }
-		img { .span(4);	}
-	}
-	
-	@media (min-width: 481px) and (max-width: 979px) {
 		section#content {
 			.row();
 			
 			article {
-				.span(12);
+				.span(10);
 				#recent {
 					.row();
-					div { width: 47%; }
+					div { .span(5); }
 				}
 			}
 			
 			aside {
-				.span(4);
+				.span(6);
 				.featured {
 					.row();
-					div { width: 100%; }
+					div { .span(3);	}
 				}
 			}
 		}
-	}
+
+				
+		footer {
+			.row();
+			section#sitemap {
+				.span(10);
+				.offset(1);
+			}
+			div { .span(4);	}
+		}
+		
+		@media (min-width: 481px) and (max-width: 979px) {
+			section#content {
+				.row();
+				
+				article {
+					.span(12);
+					#recent {
+						.row();
+						div { width: 47%; }
+					}
+				}
+				
+				aside {
+					.span(4);
+					.featured {
+						.row();
+						div { width: 100%; }
+					}
+				}
+			}	
+		}
     }
 }
 
@@ -96,7 +99,8 @@
    ========================================================================== */
 
 body {
-	background: @bodyBackground;
+	background: url('img/body-bg.png') fixed repeat-x;
+	//background: @bodyBackground;
 	padding: 0 10px;
 }
 
@@ -166,6 +170,44 @@ section#content {
 }
 
 footer {
+	background: url(img/footer-bg.png) 20px 0 no-repeat;
 	margin-top: 20px;
-	background: darkgrey;	
+	padding: 350px 0 20px 0;
+	
+	h3, p, ul {
+		margin: 5px;
+	}
+	
+	section#sitemap, div {
+		#translucent > .background(@white, 0.7);
+	}
+	
+	section#sitemap {
+		ul {
+			list-style-type: none;
+			margin: 0;
+			li {
+				float: left;
+				font-weight: bold;
+				max-width: 150px;
+				margin-left: 10px;
+				ul {
+					list-style-type: none;
+					width: auto;
+					margin-left: 5px;
+					li {
+						float: none;
+						a {
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}
+	}
+	div {
+		img {
+			margin: 0 0 10px 10px;
+		}	
+	}
 }

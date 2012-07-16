@@ -46,62 +46,8 @@
 													'depth' => 2,
 													'walker' => new bootstrap_menu()
 													)
-												); ?>
-													
-								<!--<ul class="nav">
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ajankohtaista<b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Artikkelit</a></li>
-											<li><a href="#">Blogit</a></li>
-											<li><a href="#">Kuvat</a></li>
-											<li><a href="#">Videot</a></li>
-											<li><a href="#">Live</a></li>
-										</ul>
-									</li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Fakta<b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Tietoa Sarasteesta</a></li>
-											<li><a href="#">Alaleirit</a></li>
-											<li><a href="#">Tavoitteet</a></li>
-											<li><a href="#">Leiritoimikunta</a></li>
-											<li><a href="#">Leirialue</a></li>
-											<li><a href="#">Yhteystiedot</a></li>
-											<li><a href="#">Bannerit</a></li>
-											<li><a href="#">Logot</a></li>
-											<li><a href="#">Yhteistyökumppanit</a></li>
-											<li><a href="#">In English</a></li>
-										</ul>
-									</li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Leiriläisille<b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Ohjeet ja materiaalit</a></li>
-											<li><a href="#">Ohjelma</a></li>
-											<li><a href="#">Saraste-kätköt</a></li>
-											<li><a href="#">Raksa ja purku</a></li>
-											<li><a href="#">Perheleiri</a></li>
-											<li><a href="#">Vierailupäivä</a></li>
-											<li><a href="#">Leirituotteet</a></li>
-											<li><a href="#">Leiribiisi</a></li>
-											<li><a href="#">Pestit</a></li>
-										</ul>
-									</li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutustujille<b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Miksi partioleirille?</a></li>
-											<li><a href="#">Missä ja milloin?</a></li>
-											<li><a href="#">Ketkä tekevät?</a></li>
-											<li><a href="#">Mitä siellä tehdään?</a></li>
-											<li><a href="#">Leiri, alaleiri, kylä, savu & lippukunta</a></li>
-											<li><a href="#">Mitä mukaan?</a></li>
-											<li><a href="#">Leirin säännöt</a></li>
-										</ul>
-									</li>
-								</ul>-->
-								
+												);
+								?>
 								<form class="navbar-search pull-right" action="<?php echo home_url(); ?>" method="get">
 									<i class="icon-search icon-white"></i> <input type="text" name="s" class="search-query" placeholder="Etsi sivustolta...">
 								</form>

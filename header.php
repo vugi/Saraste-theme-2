@@ -12,6 +12,26 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 	<script src="<?php bloginfo( 'template_directory' ); ?>/lib/bootstrap/js/bootstrap.js"></script>
 	
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fi'}</script>
+
+	
+	<?php if (have_posts()):while(have_posts()):the_post(); endwhile; endif;?>
+	<meta property="fb:app_id" content="350352811668809" />
+
+	<?php if (is_single()) { ?>
+		<meta property="og:url" content="<?php the_permalink() ?>"/>
+		<meta property="og:title" content="<?php single_post_title(''); ?>" />
+		<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="<?php if(has_post_thumbnail()) { echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); } else { echo get_template_directory() . '/img/saraste-logo-facebook.jpg'; } ?>" />
+	<?php } else { ?>
+		<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="<?php echo get_template_directory() . '/img/saraste-logo-facebook.jpg'; ?>" />
+	<?php } ?>
+	
 	<?php wp_head(); ?>
 </head>
 

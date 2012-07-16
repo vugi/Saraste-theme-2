@@ -38,7 +38,17 @@
 
 							<!-- Everything you want hidden at 940px or less, place within here -->
 							<div class="nav-collapse">
-								<ul class="nav">
+								<?php wp_nav_menu(
+												array(
+													'theme_location' => 'nav',
+													'container' => false,
+													'menu_class' => 'nav',
+													'depth' => 2,
+													'walker' => new bootstrap_menu()
+													)
+												); ?>
+													
+								<!--<ul class="nav">
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ajankohtaista<b class="caret"></b></a>
 										<ul class="dropdown-menu">
@@ -90,7 +100,7 @@
 											<li><a href="#">Leirin säännöt</a></li>
 										</ul>
 									</li>
-								</ul>
+								</ul>-->
 								
 								<form class="navbar-search pull-right" action="<?php echo home_url(); ?>" method="get">
 									<i class="icon-search icon-white"></i> <input type="text" name="s" class="search-query" placeholder="Etsi sivustolta...">

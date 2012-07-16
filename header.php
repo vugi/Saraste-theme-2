@@ -19,7 +19,7 @@
 	<div id="responsive-grid" class="container">
 		<img src="http://placehold.it/940x400" alt="" id="cover">
 		<header>
-			<a id="logo" href="<?php home_url(); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/img/saraste-logo-badge.png" alt=""></a>
+			<a id="logo" href="<?php echo home_url(); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/img/saraste-logo-badge.png" alt=""></a>
 			<h1><span class="visible-desktop">Saraste, </span>Pääkaupunkiseudun Partiolaisten piirileiri<span class="hidden-phone"><br>Evo, Hämeenlinna 30.7.&ndash;7.8.2012</span></h1>
 			<nav>
 				<div class="navbar">
@@ -34,7 +34,7 @@
 							</a>
 
 							<!-- Be sure to leave the brand out there if you want it shown -->
-							<a class="brand" href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/img/saraste-logo-nav.png" alt="Saraste 2012"></a>
+							<a class="brand" href="<?php echo home_url(); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/img/saraste-logo-nav.png" alt="Saraste 2012"></a>
 
 							<!-- Everything you want hidden at 940px or less, place within here -->
 							<div class="nav-collapse">
@@ -92,8 +92,8 @@
 									</li>
 								</ul>
 								
-								<form class="navbar-search pull-right">
-									<i class="icon-search icon-white"></i> <input type="text" class="search-query" placeholder="Etsi sivustolta...">
+								<form class="navbar-search pull-right" action="<?php echo home_url(); ?>" method="get">
+									<i class="icon-search icon-white"></i> <input type="text" name="s" class="search-query" placeholder="Etsi sivustolta...">
 								</form>
 								<!-- .nav, .navbar-search, .navbar-form, etc -->
 							</div>

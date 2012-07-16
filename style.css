@@ -8865,7 +8865,7 @@ section#content {
   position: relative;
 }
 section#content article #recent h3 {
-  margin: 0;
+  margin: 5px 0;
 }
 section#content article .meta {
   margin-bottom: 0;

@@ -1,6 +1,5 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
-
 <head>
 	<title><?php wp_title('|', true, 'right'); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />

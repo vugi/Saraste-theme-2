@@ -1,5 +1,10 @@
 ﻿<?php
 
+add_theme_support('post-thumbnails'); 
+add_image_size('article-big', 580, 250);
+add_image_size('article-small', 280, 120);
+add_image_size('sidebar-thumb', 160, 100);
+
 add_filter('excerpt_length', 'saraste_excerpt_length', 999);
 function saraste_excerpt_length( $length ) {
 	return 15;

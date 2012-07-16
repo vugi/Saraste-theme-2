@@ -3,7 +3,11 @@
 	<?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>
 
-		<img src="http://placehold.it/580x250" alt="">
+		<?php
+			if (has_post_thumbnail('article-big')) {
+				the_post_thumbnail();
+			} 
+		?>
 		<h2><?php the_title(); ?></h2>
 		<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
 		<?php the_content(); ?>

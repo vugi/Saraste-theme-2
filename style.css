@@ -8867,6 +8867,9 @@ section#content {
   margin-top: 20px;
   position: relative;
 }
+section#content article #recent h3 {
+  margin: 0;
+}
 section#content article .meta {
   margin-bottom: 0;
   font-size: 11px;

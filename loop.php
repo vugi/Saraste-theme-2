@@ -7,7 +7,7 @@
 		<h2><?php the_title(); ?></h2>
 		<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
 		<?php the_content(); ?>
-	
+		<?php comments_template(); ?>
 	<?php endwhile; ?>
 	</article>
 	

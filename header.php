@@ -14,7 +14,6 @@
 	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fi'}</script>
 
-	
 	<?php if (have_posts()):while(have_posts()):the_post(); endwhile; endif;?>
 	<meta property="fb:app_id" content="350352811668809" />
 

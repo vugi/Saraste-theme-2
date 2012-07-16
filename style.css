@@ -732,6 +732,7 @@ h6 {
   font-weight: bold;
   color: inherit;
   text-rendering: optimizelegibility;
+	line-height: 1;
 }
 h1 small,
 h2 small,
@@ -741,24 +742,25 @@ h5 small,
 h6 small {
   font-weight: normal;
   color: #999999;
+	line-height: 1;
 }
 h1 {
   font-size: 30px;
-  line-height: 36px;
+  /*line-height: 36px;*/
 }
 h1 small {
-  font-size: 18px;
+  font-size: 18px;*/
 }
 h2 {
   font-size: 24px;
-  line-height: 36px;
+  /*line-height: 36px;*/
 }
 h2 small {
   font-size: 18px;
 }
 h3 {
   font-size: 18px;
-  line-height: 27px;
+  /*line-height: 27px;*/
 }
 h3 small {
   font-size: 14px;
@@ -766,7 +768,7 @@ h3 small {
 h4,
 h5,
 h6 {
-  line-height: 18px;
+  /*line-height: 18px;*/
 }
 h4 {
   font-size: 14px;
@@ -8869,7 +8871,7 @@ section#content {
   position: relative;
 }
 section#content article #recent h3 {
-  margin: 0;
+  margin: 5px 0;
 }
 section#content article .meta {
   margin-bottom: 0;

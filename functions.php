@@ -7,7 +7,7 @@ add_image_size('sidebar-thumb', 160, 100);
 
 add_filter('excerpt_length', 'saraste_excerpt_length', 999);
 function saraste_excerpt_length( $length ) {
-	return 15;
+	return 10;
 }
 
 add_filter('excerpt_more', 'saraste_excerpt_more');

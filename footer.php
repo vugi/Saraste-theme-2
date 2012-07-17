@@ -5,15 +5,14 @@
 			<section id="sitemap">
 				<h3>Sivukartta</h3>
 				<?php wp_nav_menu(
-												array(
-													'theme_location' => 'nav',
-													'container' => false,
-													'menu_class' => 'nav',
-													'depth' => 2,
-													'walker' => new bootstrap_menu()
-													)
-												);
-								?>
+					array(
+						'theme_location' => 'nav',
+						'container' => false,
+						'menu_class' => 'footer-nav',
+						'depth' => 2
+						)
+					);
+				?>
 			</section>
 			<div>
 				<address>

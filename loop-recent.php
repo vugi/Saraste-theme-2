@@ -15,7 +15,7 @@
 				<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
 				<?php the_excerpt(); ?>
 			</div>
-			<?php $odd = ($odd ? 0 : 1);
+			<?php $odd = ($odd ? 0 : 1); ?>
 		<?php endwhile; ?>
 	</div>
 <?php endif; ?>

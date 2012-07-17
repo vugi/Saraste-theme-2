@@ -1,8 +1,9 @@
+<?php $odd = 1; ?>
 <?php if ( have_posts() ) : ?>
 	<div id="recent">
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
-			<div>
+			<div<?php if($odd) echo ' class="odd"'; ?>>
 				<?php
 					if (has_post_thumbnail('article-small')) {
 						the_post_thumbnail();
@@ -14,6 +15,7 @@
 				<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
 				<?php the_excerpt(); ?>
 			</div>
+			<?php $odd = ($odd ? 0 : 1);
 		<?php endwhile; ?>
 	</div>
 <?php endif; ?>

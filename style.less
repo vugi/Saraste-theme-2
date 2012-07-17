@@ -251,37 +251,38 @@ section#content {
 
 footer {
 	margin-top: 20px;
+
+	h3 {
+		margin: 15px 5px 5px 15px !important;
+	}
 	
-	h3, p, ul {
-		margin: 5px;
+	p, ul {
+		margin: 5px 5px 5px 15px;
 	}
 	
 	section#sitemap {
 		ul {
 			list-style-type: none;
-			margin: 0;
 			li {
 				float: left;
 				font-weight: bold;
-				max-width: 150px;
-				margin: 5px;
+				max-width: 145px;
+				margin-right: 5px;
 				a {
 					color: @textColor;
 				}
 				ul {
 					list-style-type: none;
 					width: auto;
-					margin-left: 5px;
+					margin: 0 0 0 5px;
 					li {
 						float: none;
 						font-weight: normal;
-						margin: 0;
+						margin-left: 10px;
+						max-width: 140px;
 						a {
 							color: @linkColor;
 						}
-					}
-					li:before {
-						content: "– ";
 					}
 				}
 			}

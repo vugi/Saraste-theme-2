@@ -1,4 +1,5 @@
 <?php $first = 1; ?>
+<?php $odd = 1; ?>
 <?php if ( have_posts() ) : ?>
 	<article>
 	<?php while ( have_posts() ) : ?>
@@ -13,7 +14,7 @@
 			<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
 			<?php the_content('Lue lisää &rarr;'); ?> 
 		<?php else : ?>
-			<div>
+			<div<?php if($odd) echo ' class="odd"'; ?>>
 				<?php
 					if (has_post_thumbnail('article-small')) {
 						the_post_thumbnail();
@@ -25,6 +26,7 @@
 				<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
 				<?php the_excerpt(); ?>
 			</div>
+			<?php $odd = ($odd ? 0 : 1); ?>
 		<?php endif; ?>
 		<?php if($first) : ?>
 			<div id="recent">

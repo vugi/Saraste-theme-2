@@ -9272,6 +9272,9 @@ footer section#sitemap ul li {
   max-width: 150px;
   margin: 5px;
 }
+footer section#sitemap ul li a {
+  color: #000000;
+}
 footer section#sitemap ul li ul {
   list-style-type: none;
   width: auto;

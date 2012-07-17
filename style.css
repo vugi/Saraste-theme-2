@@ -9282,11 +9282,14 @@ footer section#sitemap ul li ul {
 }
 footer section#sitemap ul li ul li {
   float: none;
+  font-weight: normal;
   margin: 0;
 }
 footer section#sitemap ul li ul li a {
   color: #839321;
-  font-weight: normal;
+}
+footer section#sitemap ul li ul li a:before {
+  content: "– ";
 }
 footer div img {
   margin: 0 0 10px 10px;

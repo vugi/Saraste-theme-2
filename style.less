@@ -271,10 +271,13 @@ footer {
 					margin-left: 5px;
 					li {
 						float: none;
+						font-weight: normal;
 						margin: 0;
 						a {
-							color: @linkColor;
-							font-weight: normal;
+							color: @linkColor
+						}
+						a:before {
+							content: "– ";
 						}
 					}
 				}

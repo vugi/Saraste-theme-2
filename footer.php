@@ -9,8 +9,7 @@
 						'theme_location' => 'nav',
 						'container' => false,
 						'menu_class' => 'footer-nav',
-						'depth' => 2,
-						'before' => '&ndash; '
+						'depth' => 2
 						)
 					);
 				?>

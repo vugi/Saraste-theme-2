@@ -9273,7 +9273,7 @@ footer section#sitemap ul li {
   margin: 5px;
 }
 footer section#sitemap ul li a {
-  color: #000000;
+  color: #333333;
 }
 footer section#sitemap ul li ul {
   list-style-type: none;
@@ -9288,7 +9288,7 @@ footer section#sitemap ul li ul li {
 footer section#sitemap ul li ul li a {
   color: #839321;
 }
-footer section#sitemap ul li ul li a:before {
+footer section#sitemap ul li ul li:before {
   content: "– ";
 }
 footer div img {

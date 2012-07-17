@@ -9,7 +9,7 @@
 			} 
 		?>
 		<h2><?php the_title(); ?></h2>
-		<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
+		<?php if(!is_page()){ ?><p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p><?php } ?>
 		<?php the_content(); ?>
 		
 		<div class="well well-small">

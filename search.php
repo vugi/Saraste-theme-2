@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <article>
 	<h2>Haku: <?php the_search_query(); ?></h2>

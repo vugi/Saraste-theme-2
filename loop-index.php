@@ -1,4 +1,4 @@
-﻿<?php $first = 1; ?>
+<?php $first = 1; ?>
 <?php if ( have_posts() ) : ?>
 	<article>
 	<?php while ( have_posts() ) : ?>

@@ -5,15 +5,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/style.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css" />
 	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-	<script src="<?php bloginfo( 'template_directory' ); ?>/lib/bootstrap/js/bootstrap.js"></script>
+	<?php wp_enqueue_script('social', get_bloginfo('template_directory') . '/js/social.js'); ?>
 	
-	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fi'}</script>
-
 	<?php if (have_posts()):while(have_posts()):the_post(); endwhile; endif;?>
 	<meta property="fb:app_id" content="350352811668809" />
 
@@ -22,18 +17,20 @@
 		<meta property="og:title" content="<?php single_post_title(''); ?>" />
 		<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
 		<meta property="og:type" content="article" />
-		<meta property="og:image" content="<?php if(has_post_thumbnail()) { echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); } else { echo get_template_directory() . '/img/saraste-logo-facebook.jpg'; } ?>" />
+		<meta property="og:image" content="<?php if(has_post_thumbnail()) { echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); } else { echo get_bloginfo('template_directory') . '/img/saraste-logo-facebook.jpg'; } ?>" />
 	<?php } else { ?>
 		<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 		<meta property="og:type" content="website" />
-		<meta property="og:image" content="<?php echo get_template_directory() . '/img/saraste-logo-facebook.jpg'; ?>" />
+		<meta property="og:image" content="<?php echo get_bloginfo('template_directory') . '/img/saraste-logo-facebook.jpg'; ?>" />
 	<?php } ?>
 	
 	<?php wp_head(); ?>
+	<script src="<?php bloginfo('template_directory'); ?>/lib/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+	<div id="fb-root"></div>
 	<div id="responsive-grid" class="container">
 		<img src="http://placehold.it/940x400" alt="" id="cover">
 		<header>

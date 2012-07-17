@@ -1,4 +1,4 @@
-﻿<?php if ( post_password_required() ) : ?>
+<?php if ( post_password_required() ) : ?>
 	<p class="alert"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyeleven' ); ?></p>
 <?php
 		return;

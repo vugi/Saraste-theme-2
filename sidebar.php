@@ -1,4 +1,4 @@
-﻿<?php $opt = get_option('saraste_theme_options');	?>
+<?php $opt = get_option('saraste_theme_options');	?>
 
 <aside>
 	<div class="featured">
@@ -26,6 +26,6 @@
 	</div>
 	<div class="visible-desktop">
 		<h3>Facebook</h3>
-		<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsaraste2012&width=340&height=427&colorscheme=light&show_faces=false&border_color&stream=true&header=false&appId=350352811668809" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:340px; height:427px;" allowTransparency="true"></iframe>
+		<div class="fb-like-box" data-href="http://www.facebook.com/Saraste2012" data-width="340" data-height="400" data-show-faces="false" data-stream="true" data-header="false"></div>
 	</div>
 </aside>

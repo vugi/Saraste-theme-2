@@ -1,4 +1,4 @@
-﻿<?php if ( have_posts() ) : ?>
+<?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>
 		<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>

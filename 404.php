@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <article>
 	<h2>Ei löytynyt :(</h2>

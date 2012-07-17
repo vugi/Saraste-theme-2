@@ -1,4 +1,4 @@
-﻿<?php $opt = get_option('saraste_theme_options');	?>
+<?php $opt = get_option('saraste_theme_options');	?>
 
 <aside>
 	<div class="featured">

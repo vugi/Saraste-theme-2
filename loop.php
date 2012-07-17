@@ -1,4 +1,4 @@
-﻿ <?php if ( have_posts() ) : ?>
+ <?php if ( have_posts() ) : ?>
 	<article>
 	<?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>

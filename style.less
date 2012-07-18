@@ -69,11 +69,10 @@ Version: 2.0.0
 				
 		footer {
 			.row();
-			section#sitemap {
-				.span(11);
+			section#sitemap, section#contact {
+				.span(14);
 				.offset(1);
 			}
-			div { .span(3);	}
 		}
 		
 		@media (min-width: 481px) and (max-width: 979px) {
@@ -99,7 +98,7 @@ Version: 2.0.0
 
 			footer {
 				.row();
-				div, section#sitemap {
+				section#contact, section#sitemap {
 					.span(16);
 				}
 			}
@@ -288,13 +287,14 @@ footer {
 			}
 		}
 	}
-	div {
+	section#contact {
 		padding: 10px 0;
 		address {
-			margin-bottom: 16px;
+			.pull-left;
 		}
 		img {
-			margin-left: 15px;
+			margin-top: -60px;
+			.pull-right;
 		}	
 	}
 }

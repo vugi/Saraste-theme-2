@@ -18,9 +18,7 @@
 				<address>
 					<h3>Yhteystiedot</h3>
 					<p>Osoite 1<br>Osoite 2</p>
-					<p>Näin lähetät postia leirille</p>
-					<p>Puhelinnumero</p>
-					<p>Sähköposti</p>
+					<p>Puhelinnumero<br>Sähköposti</p>
 					<p><a href="#">Palautelomake</a></p>
 				</address>
 				<a href="http://www.paakaupunkiseudunpartiolaiset.fi" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/img/papa-logo.png" alt="Pääkaupunkiseudun Partiolaiset ry"></a>	

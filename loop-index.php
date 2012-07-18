@@ -36,7 +36,5 @@
 		</div>
 	</article>
 <?php else: ?>
-	
 	<?php get_404_template(); ?>
- 
  <?php endif; ?>

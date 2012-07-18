@@ -5,9 +5,13 @@
 		<?php the_excerpt(); ?>
 	<?php endwhile; ?>
 	<?php if ($wp_query->max_num_pages > 1) : ?>
-		<p class="post_nav">
-			<?php next_posts_link('<i class="icon-arrow-left"></i> Vanhemmat artikkelit'); ?>
-			<?php previous_posts_link('Uudemmat artikkelit <i class="icon-arrow-right"></i>'); ?>
-		</p>
+		<ul class="pager">
+		  <li class="previous">
+			<?php next_posts_link('&larr; Vanhemmat artikkelit'); ?>
+		  </li>
+		  <li class="next">
+			<?php previous_posts_link('Uudemmat artikkelit &rarr;'); ?>
+		  </li>
+		</ul>
 	<?php endif; ?>
 <?php endif; ?>

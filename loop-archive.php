@@ -18,4 +18,14 @@
 			<?php $odd = ($odd ? 0 : 1); ?>
 		<?php endwhile; ?>
 	</div>
+	<?php if ($wp_query->max_num_pages > 1) : ?>
+		<ul class="pager">
+		  <li class="previous">
+			<?php next_posts_link('&larr; Vanhemmat artikkelit'); ?>
+		  </li>
+		  <li class="next">
+			<?php previous_posts_link('Uudemmat artikkelit &rarr;'); ?>
+		  </li>
+		</ul>
+	<?php endif; ?>
 <?php endif; ?>

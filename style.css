@@ -918,6 +918,7 @@ section#content{margin-top:20px;position:relative;}section#content article #rece
 section#content article #recent .odd{clear:left;}
 section#content article .meta{margin-bottom:0;font-size:11px;color:#999999;}
 section#content article h3{margin:20px 0;}
+section#content article h3.blogs{margin-bottom:0;}
 section#content article .comment{margin-top:15px;}section#content article .comment img{float:left;}
 section#content article .comment .comment-author{margin:5px 0 0 60px;}
 section#content article .comment .comment-meta{margin:5px 0 0 60px;color:#999999;}

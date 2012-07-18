@@ -18,7 +18,6 @@
 				<address>
 					<h3>Yhteystiedot</h3>
 					<p>Osoite 1<br>Osoite 2</p>
-					<p><a href="#">Postia leirille</a></p>
 					<p>Puhelinnumero<br>Sähköposti</p>
 					<p><a href="#">Palautelomake</a></p>
 				</address>

@@ -116,6 +116,13 @@ Version: 2.0.0
 		MAIN ELEMENTS
    ========================================================================== */
 
+::selection {
+	background: lighten(@linkColor, 10%);
+}
+::-moz-selection {
+	background: lighten(@linkColor, 10%);
+}
+   
 body {
 	background: @bodyBackground;
 	padding: 0 10px;

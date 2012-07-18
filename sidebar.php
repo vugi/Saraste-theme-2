@@ -16,5 +16,5 @@
 			}
 		}
 	?>
-	<?php get_sidebar('sivupalkki'); ?>
+	<?php dynamic_sidebar('sivupalkki'); ?>
 </aside>

@@ -21,7 +21,7 @@
 					<p>Puhelinnumero<br>Sähköposti</p>
 					<p><a href="#">Palautelomake</a></p>
 				</address>
-				<a href="http://www.paakaupunkiseudunpartiolaiset.fi" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/img/papa-logo.jpg" alt="Pääkaupunkiseudun Partiolaiset ry"></a>	
+				<a href="http://www.paakaupunkiseudunpartiolaiset.fi" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/img/papa-logo.png" alt="Pääkaupunkiseudun Partiolaiset ry"></a>	
 			</div>
 		</footer>
 	</div>

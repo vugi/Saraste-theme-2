@@ -13,7 +13,7 @@
 		<?php the_content(); ?>
 		
 		<?php if(is_single()) : ?>
-			<div id="social">				
+			<div id="social" class="visible-desktop">				
 				<div class="fb-like" data-send="false" data-width="390" data-show-faces="false" data-font="tahoma"></div>
 				<div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div>
 				<a href="https://twitter.com/share" class="twitter-share-button" data-via="Saraste2012" data-lang="fi" data-size="large" data-count="none">Twiittaa</a>

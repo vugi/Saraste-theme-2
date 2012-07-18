@@ -7,7 +7,6 @@
 	
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css" />
 	
-	<?php wp_enqueue_script('social', get_bloginfo('template_directory') . '/js/social.js'); ?>
 	
 	<?php if (have_posts()):while(have_posts()):the_post(); endwhile; endif;?>
 	<meta property="fb:app_id" content="350352811668809" />
@@ -26,6 +25,7 @@
 	<?php } ?>
 	
 	<?php wp_head(); ?>
+	<?php wp_enqueue_script('social', get_bloginfo('template_directory') . '/js/social.js'); ?>
 	<script src="<?php bloginfo('template_directory'); ?>/lib/bootstrap/js/bootstrap.min.js"></script>
 </head>
 

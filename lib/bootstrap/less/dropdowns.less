@@ -88,12 +88,15 @@
 
 // Hover state
 // -----------
-.dropdown-menu li > a:hover,
-.dropdown-menu .active > a,
-.dropdown-menu .active > a:hover {
-  color: @dropdownLinkColorHover;
+.dropdown-menu li > a:hover, .dropdown-menu .active > a:hover {
+  color: @dropdownLinkColorHover !important;
   text-decoration: none;
-  background-color: @dropdownLinkBackgroundHover;
+  background-color: @dropdownLinkBackgroundHover !important;
+}
+
+.dropdown-menu .active > a {
+	color: @dropdownLinkColor !important;
+	font-weight: bold;
 }
 
 // Open state for the dropdown

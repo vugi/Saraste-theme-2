@@ -15,12 +15,7 @@
 				?>
 			</section>
 			<section id="contact">
-				<address>
-					Osoite 1, Osoite 2 |
-					Puhelinnumero |
-					Sähköposti | 
-					<a href="#">Palautelomake</a>
-				</address>
+				<?php dynamic_sidebar('contact'); ?>
 				<a href="http://www.paakaupunkiseudunpartiolaiset.fi" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/img/papa-logo.png" alt="Pääkaupunkiseudun Partiolaiset ry"></a>	
 			</section>
 		</footer>

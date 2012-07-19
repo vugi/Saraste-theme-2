@@ -6,6 +6,7 @@ add_image_size('article-small', 280, 120);
 add_image_size('sidebar-thumb', 160, 100);
 
 register_sidebar(array('name' => 'Sivupalkki', 'id' => 'sivupalkki', 'before_widget' => '', 'after_widget' => '', 'before_title' => '<h2>', 'after_title' => '</h2>'));
+register_sidebar(array('name' => 'Yhteystiedot', 'id' => 'contact', 'before_widget' => '<address>', 'after_widget' => '</address>', 'before_title' => '<strong>', 'after_title' => '</strong>'));
 
 add_filter('excerpt_length', 'saraste_excerpt_length', 999);
 function saraste_excerpt_length( $length ) {

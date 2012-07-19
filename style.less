@@ -69,11 +69,10 @@ Version: 2.0.0
 				
 		footer {
 			.row();
-			section#sitemap {
-				.span(11);
+			section#sitemap, section#contact {
+				.span(14);
 				.offset(1);
 			}
-			div { .span(3);	}
 		}
 		
 		@media (min-width: 481px) and (max-width: 979px) {
@@ -99,7 +98,7 @@ Version: 2.0.0
 
 			footer {
 				.row();
-				div, section#sitemap {
+				section#contact, section#sitemap {
 					.span(16);
 				}
 			}
@@ -172,6 +171,10 @@ header {
 			.icon-bar {
 				#gradient > .vertical(@linkColorHover, @linkColor);
 			}
+			
+			.search-query {
+				width: 180px;
+			}
 		}		
 	}
 }
@@ -240,6 +243,20 @@ section#content {
 			}	
 		}
 		
+		.thumb {
+			width: 180px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			font-size: 26px;
+			line-height: 30px;
+			font-weight: bold;
+			display: inline-block;
+		}
+		
+		.thumb:nth-child(3n+3) {
+			margin-right: 0;
+		}	
+		
 		#social {
 			.well;
 			.well-small;
@@ -257,7 +274,7 @@ footer {
 		margin: 0 5px 5px 15px;
 	}
 	
-	p, ul {
+	ul {
 		margin: 5px 5px 5px 15px;
 	}
 	
@@ -288,13 +305,16 @@ footer {
 			}
 		}
 	}
-	div {
+	section#contact {
+		margin-top: 100px;
 		padding: 10px 0;
 		address {
-			margin-bottom: 16px;
+			margin-left: 15px;
+			.pull-left;
 		}
 		img {
-			margin-left: 15px;
+			margin-top: -60px;
+			.pull-right;
 		}	
 	}
 }

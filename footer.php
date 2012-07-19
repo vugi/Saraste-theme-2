@@ -14,15 +14,10 @@
 					);
 				?>
 			</section>
-			<div>
-				<address>
-					<h3>Yhteystiedot</h3>
-					<p>Osoite 1<br>Osoite 2</p>
-					<p>Puhelinnumero<br>Sähköposti</p>
-					<p><a href="#">Palautelomake</a></p>
-				</address>
+			<section id="contact">
+				<?php dynamic_sidebar('contact'); ?>
 				<a href="http://www.paakaupunkiseudunpartiolaiset.fi" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/img/papa-logo.png" alt="Pääkaupunkiseudun Partiolaiset ry"></a>	
-			</div>
+			</section>
 		</footer>
 	</div>
 	<?php wp_footer(); ?>

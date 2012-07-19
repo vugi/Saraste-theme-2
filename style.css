@@ -6290,16 +6290,12 @@ footer:after {
 footer:after {
   clear: both;
 }
-footer section#sitemap {
-  width: 640px;
+footer section#sitemap,
+footer section#contact {
+  width: 820px;
   float: left;
   margin-left: 20px;
   margin-left: 80px;
-}
-footer div {
-  width: 160px;
-  float: left;
-  margin-left: 20px;
 }
 @media (min-width: 481px) and (max-width: 979px) {
   section#content {
@@ -6402,7 +6398,7 @@ footer div {
   footer:after {
     clear: both;
   }
-  footer div,
+  footer section#contact,
   footer section#sitemap {
     width: 940px;
     float: left;
@@ -6625,18 +6621,13 @@ footer div {
   footer:after {
     clear: both;
   }
-  footer section#sitemap {
+  footer section#sitemap,
+  footer section#contact {
     float: none;
     display: block;
     width: auto;
     margin: 0;
     margin-left: 40;
-  }
-  footer div {
-    float: none;
-    display: block;
-    width: auto;
-    margin: 0;
   }
   body {
     padding: 60px 4% 0 4% !important;
@@ -6836,7 +6827,7 @@ footer div {
   footer:after {
     clear: both;
   }
-  footer div,
+  footer section#contact,
   footer section#sitemap {
     float: none;
     display: block;
@@ -6970,16 +6961,12 @@ footer div {
   footer:after {
     clear: both;
   }
-  footer section#sitemap {
-    width: 67.25%;
+  footer section#sitemap,
+  footer section#contact {
+    width: 86%;
     float: left;
     margin-left: 1.5%;
     margin-left: 43%;
-  }
-  footer div {
-    width: 17.25%;
-    float: left;
-    margin-left: 1.5%;
   }
   #logo {
     width: 30%;
@@ -7168,7 +7155,7 @@ footer div {
   footer:after {
     clear: both;
   }
-  footer div,
+  footer section#contact,
   footer section#sitemap {
     width: 98.5%;
     float: left;
@@ -7301,16 +7288,12 @@ footer div {
   footer:after {
     clear: both;
   }
-  footer section#sitemap {
-    width: 494px;
+  footer section#sitemap,
+  footer section#contact {
+    width: 632px;
     float: left;
     margin-left: 12px;
     margin-left: 64px;
-  }
-  footer div {
-    width: 126px;
-    float: left;
-    margin-left: 12px;
   }
   .row {
     margin-left: -12px;
@@ -8002,7 +7985,7 @@ footer div {
   footer:after {
     clear: both;
   }
-  footer div,
+  footer section#contact,
   footer section#sitemap {
     width: 724px;
     float: left;
@@ -8017,8 +8000,7 @@ footer div {
     background: url(lib/bootstrap/less/lib/bootstrap/less/../../../../../../img/footer-bg.jpg) 20px 0 no-repeat;
     padding: 350px 0 20px 0;
   }
-  footer section#sitemap,
-  footer div {
+  footer section#sitemap {
     background-color: rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0.7);
   }
@@ -8866,6 +8848,9 @@ header nav .navbar-inner .icon-bar {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b5513', endColorstr='#839321', GradientType=0);
 }
+header nav .navbar-inner .search-query {
+  width: 180px;
+}
 #cover {
   margin-bottom: -80px;
 }
@@ -9071,6 +9056,18 @@ section#content article #respond textarea {
   width: 500px;
   height: 120px;
 }
+section#content article .thumb {
+  width: 180px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+section#content article .thumb:nth-child(3n+3) {
+  margin-right: 0;
+}
 section#content article #social {
   min-height: 20px;
   padding: 19px;
@@ -9111,7 +9108,6 @@ footer {
 footer h3 {
   margin: 0 5px 5px 15px;
 }
-footer p,
 footer ul {
   margin: 5px 5px 5px 15px;
 }
@@ -9142,12 +9138,15 @@ footer section#sitemap ul li ul li {
 footer section#sitemap ul li ul li a {
   color: #839321;
 }
-footer div {
+footer section#contact {
+  margin-top: 100px;
   padding: 10px 0;
 }
-footer div address {
-  margin-bottom: 16px;
-}
-footer div img {
+footer section#contact address {
   margin-left: 15px;
+  float: left;
+}
+footer section#contact img {
+  margin-top: -60px;
+  float: right;
 }

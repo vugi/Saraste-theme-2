@@ -8011,7 +8011,7 @@ footer div {
 }
 @media (min-width: 980px) {
   body {
-    background: url("lib/bootstrap/less/lib/bootstrap/less/../../../../../../img/body-bg.jpg") fixed repeat-x !important;
+    background: url("lib/bootstrap/less/lib/bootstrap/less/../../../../../../img/body-bg-400.jpg") fixed repeat-x !important;
   }
   footer {
     background: url(lib/bootstrap/less/lib/bootstrap/less/../../../../../../img/footer-bg.jpg) 20px 0 no-repeat;

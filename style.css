@@ -6213,15 +6213,31 @@ section#content:after {
 section#content:after {
   clear: both;
 }
-section#content article.first {
+section#content .articles {
   width: 580px;
   float: left;
   margin-left: 20px;
 }
 section#content #recent {
-  width: 580px;
-  float: left;
-  margin-left: 20px;
+  margin-left: -20px;
+  *zoom: 1;
+  *zoom: 1;
+}
+section#content #recent:before,
+section#content #recent:after {
+  display: table;
+  content: "";
+}
+section#content #recent:after {
+  clear: both;
+}
+section#content #recent:before,
+section#content #recent:after {
+  display: table;
+  content: "";
+}
+section#content #recent:after {
+  clear: both;
 }
 section#content #recent div {
   width: 280px;
@@ -6521,17 +6537,33 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article.first {
+  section#content .articles {
     float: none;
     display: block;
     width: auto;
     margin: 0;
   }
   section#content #recent {
-    float: none;
-    display: block;
-    width: auto;
-    margin: 0;
+    margin-left: 0;
+    *zoom: 1;
+    *zoom: 1;
+    margin-left: 0;
+  }
+  section#content #recent:before,
+  section#content #recent:after {
+    display: table;
+    content: "";
+  }
+  section#content #recent:after {
+    clear: both;
+  }
+  section#content #recent:before,
+  section#content #recent:after {
+    display: table;
+    content: "";
+  }
+  section#content #recent:after {
+    clear: both;
   }
   section#content #recent div {
     float: none;
@@ -6852,15 +6884,31 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article.first {
+  section#content .articles {
     width: 61%;
     float: left;
     margin-left: 1.5%;
   }
   section#content #recent {
-    width: 61%;
-    float: left;
-    margin-left: 1.5%;
+    margin-left: -1.5%;
+    *zoom: 1;
+    *zoom: 1;
+  }
+  section#content #recent:before,
+  section#content #recent:after {
+    display: table;
+    content: "";
+  }
+  section#content #recent:after {
+    clear: both;
+  }
+  section#content #recent:before,
+  section#content #recent:after {
+    display: table;
+    content: "";
+  }
+  section#content #recent:after {
+    clear: both;
   }
   section#content #recent div {
     width: 29.75%;
@@ -7163,15 +7211,31 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article.first {
+  section#content .articles {
     width: 448px;
     float: left;
     margin-left: 12px;
   }
   section#content #recent {
-    width: 448px;
-    float: left;
-    margin-left: 12px;
+    margin-left: -12px;
+    *zoom: 1;
+    *zoom: 1;
+  }
+  section#content #recent:before,
+  section#content #recent:after {
+    display: table;
+    content: "";
+  }
+  section#content #recent:after {
+    clear: both;
+  }
+  section#content #recent:before,
+  section#content #recent:after {
+    display: table;
+    content: "";
+  }
+  section#content #recent:after {
+    clear: both;
   }
   section#content #recent div {
     width: 218px;

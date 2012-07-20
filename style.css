@@ -152,7 +152,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #46a546;
+  background-color: #556e2a;
 }
 a {
   color: #839321;
@@ -756,12 +756,18 @@ h2 {
 h2 small {
   font-size: 18px;
 }
+aside h2 {
+  margin: 5px 0 10px;
+}
 h3 {
   font-size: 18px;
   margin: 5px 0;
 }
 h3 small {
   font-size: 14px;
+}
+aside h2 {
+  margin: 5px 0 10px;
 }
 h4 {
   font-size: 14px;
@@ -8783,7 +8789,7 @@ footer section#contact {
   background: #cfdf6e;
 }
 body {
-  background: #46a546;
+  background: #556e2a;
   padding: 0 10px;
 }
 #responsive-grid {

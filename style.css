@@ -6309,7 +6309,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article.first {
+  section#content .articles {
     width: 700px;
     float: left;
     margin-left: 20px;
@@ -6717,7 +6717,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article.first {
+  section#content .articles {
     float: none;
     display: block;
     width: auto;
@@ -7034,7 +7034,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article.first {
+  section#content .articles {
     width: 73.5%;
     float: left;
     margin-left: 1.5%;
@@ -7848,7 +7848,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article.first {
+  section#content .articles {
     width: 540px;
     float: left;
     margin-left: 12px;

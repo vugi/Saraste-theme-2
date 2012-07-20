@@ -2,6 +2,7 @@
 <?php $odd = 1; ?>
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : ?>
+  <div class="articles">
 		<?php the_post(); ?>
 		<?php if($first && is_sticky()) : ?>
 	<article class="first">
@@ -41,6 +42,7 @@
 		<?php $first = 0; ?>
 	<?php endwhile; ?>
 		</div>
+  </div>
 <?php else: ?>
 	<?php get_404_template(); ?>
  <?php endif; ?>

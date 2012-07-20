@@ -6309,7 +6309,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles {
+  section#content article.first {
     width: 700px;
     float: left;
     margin-left: 20px;
@@ -6717,7 +6717,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles {
+  section#content article.first {
     float: none;
     display: block;
     width: auto;
@@ -7034,7 +7034,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles {
+  section#content article.first {
     width: 73.5%;
     float: left;
     margin-left: 1.5%;
@@ -7848,7 +7848,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles {
+  section#content article.first {
     width: 540px;
     float: left;
     margin-left: 12px;
@@ -8800,35 +8800,35 @@ section#content {
   margin-top: 20px;
   position: relative;
 }
-section#content article.first .meta {
+section#content article .meta {
   margin-bottom: 0;
   font-size: 11px;
   color: #999999;
 }
-section#content article.first h3 {
+section#content article h3 {
   margin: 20px 0;
 }
-section#content article.first h3.blogs {
+section#content article h3.blogs {
   margin-bottom: 0;
 }
-section#content article.first .comment {
+section#content article .comment {
   margin-top: 15px;
 }
-section#content article.first .comment img {
+section#content article .comment img {
   float: left;
 }
-section#content article.first .comment .comment-author {
+section#content article .comment .comment-author {
   margin: 5px 0 0 60px;
 }
-section#content article.first .comment .comment-meta {
+section#content article .comment .comment-meta {
   margin: 5px 0 0 60px;
   color: #999999;
 }
-section#content article.first .comment .comment-body {
+section#content article .comment .comment-body {
   clear: both;
   margin: 15px 0 0 0;
 }
-section#content article.first #respond submit {
+section#content article #respond submit {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -8958,41 +8958,41 @@ section#content article.first #respond submit {
   border-color: #ccc;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-section#content article.first #respond submit:hover,
-section#content article.first #respond submit:active,
-section#content article.first #respond submit.active,
-section#content article.first #respond submit.disabled,
-section#content article.first #respond submit[disabled] {
+section#content article #respond submit:hover,
+section#content article #respond submit:active,
+section#content article #respond submit.active,
+section#content article #respond submit.disabled,
+section#content article #respond submit[disabled] {
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
-section#content article.first #respond submit:active,
-section#content article.first #respond submit.active {
+section#content article #respond submit:active,
+section#content article #respond submit.active {
   background-color: #cccccc \9;
 }
-section#content article.first #respond submit:hover,
-section#content article.first #respond submit:active,
-section#content article.first #respond submit.active,
-section#content article.first #respond submit.disabled,
-section#content article.first #respond submit[disabled] {
+section#content article #respond submit:hover,
+section#content article #respond submit:active,
+section#content article #respond submit.active,
+section#content article #respond submit.disabled,
+section#content article #respond submit[disabled] {
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
-section#content article.first #respond submit:active,
-section#content article.first #respond submit.active {
+section#content article #respond submit:active,
+section#content article #respond submit.active {
   background-color: #cccccc \9;
 }
-section#content article.first #respond submit:first-child {
+section#content article #respond submit:first-child {
   *margin-left: 0;
 }
-section#content article.first #respond submit:first-child {
+section#content article #respond submit:first-child {
   *margin-left: 0;
 }
-section#content article.first #respond textarea {
+section#content article #respond textarea {
   width: 500px;
   height: 120px;
 }
-section#content article.first .thumb {
+section#content article .thumb {
   width: 180px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -9001,10 +9001,10 @@ section#content article.first .thumb {
   font-weight: bold;
   display: inline-block;
 }
-section#content article.first .thumb:nth-child(3n+3) {
+section#content article .thumb:nth-child(3n+3) {
   margin-right: 0;
 }
-section#content article.first #social {
+section#content article #social {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -9031,11 +9031,11 @@ section#content article.first #social {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-section#content article.first #social blockquote {
+section#content article #social blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
-section#content article.first #social .twitter-share-button {
+section#content article #social .twitter-share-button {
   margin-bottom: -2px;
 }
 section#content #recent h3 {

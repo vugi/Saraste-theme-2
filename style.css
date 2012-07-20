@@ -6239,7 +6239,7 @@ section#content #recent:after {
 section#content #recent:after {
   clear: both;
 }
-section#content #recent div {
+section#content #recent article {
   width: 280px;
   float: left;
   margin-left: 20px;
@@ -6351,7 +6351,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
-  section#content #recent div {
+  section#content #recent article {
     width: 47%;
   }
   section#content aside {
@@ -6565,7 +6565,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
-  section#content #recent div {
+  section#content #recent article {
     float: none;
     display: block;
     width: auto;
@@ -6777,7 +6777,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
-  section#content #recent div {
+  section#content #recent article {
     width: 47%;
   }
   section#content aside {
@@ -6910,7 +6910,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
-  section#content #recent div {
+  section#content #recent article {
     width: 29.75%;
     float: left;
     margin-left: 1.5%;
@@ -7108,7 +7108,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
-  section#content #recent div {
+  section#content #recent article {
     width: 47%;
   }
   section#content aside {
@@ -7237,7 +7237,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
-  section#content #recent div {
+  section#content #recent article {
     width: 218px;
     float: left;
     margin-left: 12px;
@@ -7938,7 +7938,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
-  section#content #recent div {
+  section#content #recent article {
     width: 47%;
   }
   section#content aside {

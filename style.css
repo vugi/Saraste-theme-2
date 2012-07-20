@@ -6213,33 +6213,33 @@ section#content:after {
 section#content:after {
   clear: both;
 }
-section#content article {
+section#content article.first {
   width: 580px;
   float: left;
   margin-left: 20px;
 }
-section#content article #recent {
+section#content #recent {
   margin-left: -20px;
   *zoom: 1;
   *zoom: 1;
 }
-section#content article #recent:before,
-section#content article #recent:after {
+section#content #recent:before,
+section#content #recent:after {
   display: table;
   content: "";
 }
-section#content article #recent:after {
+section#content #recent:after {
   clear: both;
 }
-section#content article #recent:before,
-section#content article #recent:after {
+section#content #recent:before,
+section#content #recent:after {
   display: table;
   content: "";
 }
-section#content article #recent:after {
+section#content #recent:after {
   clear: both;
 }
-section#content article #recent div {
+section#content #recent div {
   width: 280px;
   float: left;
   margin-left: 20px;
@@ -6325,7 +6325,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article {
+  section#content article.first {
     width: 700px;
     float: left;
     margin-left: 20px;
@@ -6537,35 +6537,35 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article {
+  section#content article.first {
     float: none;
     display: block;
     width: auto;
     margin: 0;
   }
-  section#content article #recent {
+  section#content #recent {
     margin-left: 0;
     *zoom: 1;
     *zoom: 1;
     margin-left: 0;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent div {
+  section#content #recent div {
     float: none;
     display: block;
     width: auto;
@@ -6749,7 +6749,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article {
+  section#content article.first {
     float: none;
     display: block;
     width: auto;
@@ -6884,33 +6884,33 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article {
+  section#content article.first {
     width: 61%;
     float: left;
     margin-left: 1.5%;
   }
-  section#content article #recent {
+  section#content #recent {
     margin-left: -1.5%;
     *zoom: 1;
     *zoom: 1;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent div {
+  section#content #recent div {
     width: 29.75%;
     float: left;
     margin-left: 1.5%;
@@ -7082,7 +7082,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article {
+  section#content article.first {
     width: 73.5%;
     float: left;
     margin-left: 1.5%;
@@ -7211,33 +7211,33 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article {
+  section#content article.first {
     width: 448px;
     float: left;
     margin-left: 12px;
   }
-  section#content article #recent {
+  section#content #recent {
     margin-left: -12px;
     *zoom: 1;
     *zoom: 1;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent div {
+  section#content #recent div {
     width: 218px;
     float: left;
     margin-left: 12px;
@@ -7912,7 +7912,7 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content article {
+  section#content article.first {
     width: 540px;
     float: left;
     margin-left: 12px;

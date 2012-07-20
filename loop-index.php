@@ -4,7 +4,7 @@
 	<?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>
 		<?php if($first && is_sticky()) : ?>
-	<article>
+	<article class="first">
 			<a href="<?php the_permalink(); ?>">
 				<?php
 					if (has_post_thumbnail('article-big')) {

@@ -49,12 +49,12 @@ Version: 2.0.0
 		section#content {
 			.row();
 			
-			article {
+			article.first {
 				.span(10);
-				#recent {
-					.row();
-					div { .span(5); }
-				}
+			}
+			#recent {
+				.row();
+				div { .span(5); }
 			}
 			
 			aside {
@@ -79,14 +79,14 @@ Version: 2.0.0
 			section#content {
 				.row();
 				
-				article {
+				article.first {
 					.span(12);
 				
 				}
         #recent {
-						.row();
-						div { width: 47%; }
-					}
+					.row();
+					div { width: 47%; }
+				}
 				
 				aside {
 					.span(4);

@@ -53,7 +53,7 @@ Version: 2.0.0
 				.span(10);
 			}
 			#recent {
-				.row();
+				.span(10);
 				div { .span(5); }
 			}
 			
@@ -189,15 +189,7 @@ section#content {
 	margin-top: 20px;
 	position: relative;
 	
-	article {
-		#recent {
-			h3 {
-				margin: 5px 0;
-			}
-			.odd {
-				clear: left;
-			}
-		}
+	article.first {
 	
 		.meta {
 			margin-bottom: 0;
@@ -266,6 +258,16 @@ section#content {
 			}
 		}
 	}
+  
+	#recent {
+		h3 {
+			margin: 5px 0;
+		}
+		.odd {
+			clear: left;
+		}
+	}
+  
 }
 
 footer {

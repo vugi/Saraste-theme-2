@@ -6219,25 +6219,9 @@ section#content article.first {
   margin-left: 20px;
 }
 section#content #recent {
-  margin-left: -20px;
-  *zoom: 1;
-  *zoom: 1;
-}
-section#content #recent:before,
-section#content #recent:after {
-  display: table;
-  content: "";
-}
-section#content #recent:after {
-  clear: both;
-}
-section#content #recent:before,
-section#content #recent:after {
-  display: table;
-  content: "";
-}
-section#content #recent:after {
-  clear: both;
+  width: 580px;
+  float: left;
+  margin-left: 20px;
 }
 section#content #recent div {
   width: 280px;
@@ -6544,26 +6528,10 @@ footer section#contact {
     margin: 0;
   }
   section#content #recent {
-    margin-left: 0;
-    *zoom: 1;
-    *zoom: 1;
-    margin-left: 0;
-  }
-  section#content #recent:before,
-  section#content #recent:after {
-    display: table;
-    content: "";
-  }
-  section#content #recent:after {
-    clear: both;
-  }
-  section#content #recent:before,
-  section#content #recent:after {
-    display: table;
-    content: "";
-  }
-  section#content #recent:after {
-    clear: both;
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0;
   }
   section#content #recent div {
     float: none;
@@ -6890,25 +6858,9 @@ footer section#contact {
     margin-left: 1.5%;
   }
   section#content #recent {
-    margin-left: -1.5%;
-    *zoom: 1;
-    *zoom: 1;
-  }
-  section#content #recent:before,
-  section#content #recent:after {
-    display: table;
-    content: "";
-  }
-  section#content #recent:after {
-    clear: both;
-  }
-  section#content #recent:before,
-  section#content #recent:after {
-    display: table;
-    content: "";
-  }
-  section#content #recent:after {
-    clear: both;
+    width: 61%;
+    float: left;
+    margin-left: 1.5%;
   }
   section#content #recent div {
     width: 29.75%;
@@ -7217,25 +7169,9 @@ footer section#contact {
     margin-left: 12px;
   }
   section#content #recent {
-    margin-left: -12px;
-    *zoom: 1;
-    *zoom: 1;
-  }
-  section#content #recent:before,
-  section#content #recent:after {
-    display: table;
-    content: "";
-  }
-  section#content #recent:after {
-    clear: both;
-  }
-  section#content #recent:before,
-  section#content #recent:after {
-    display: table;
-    content: "";
-  }
-  section#content #recent:after {
-    clear: both;
+    width: 448px;
+    float: left;
+    margin-left: 12px;
   }
   section#content #recent div {
     width: 218px;
@@ -8864,41 +8800,35 @@ section#content {
   margin-top: 20px;
   position: relative;
 }
-section#content article #recent h3 {
-  margin: 5px 0;
-}
-section#content article #recent .odd {
-  clear: left;
-}
-section#content article .meta {
+section#content article.first .meta {
   margin-bottom: 0;
   font-size: 11px;
   color: #999999;
 }
-section#content article h3 {
+section#content article.first h3 {
   margin: 20px 0;
 }
-section#content article h3.blogs {
+section#content article.first h3.blogs {
   margin-bottom: 0;
 }
-section#content article .comment {
+section#content article.first .comment {
   margin-top: 15px;
 }
-section#content article .comment img {
+section#content article.first .comment img {
   float: left;
 }
-section#content article .comment .comment-author {
+section#content article.first .comment .comment-author {
   margin: 5px 0 0 60px;
 }
-section#content article .comment .comment-meta {
+section#content article.first .comment .comment-meta {
   margin: 5px 0 0 60px;
   color: #999999;
 }
-section#content article .comment .comment-body {
+section#content article.first .comment .comment-body {
   clear: both;
   margin: 15px 0 0 0;
 }
-section#content article #respond submit {
+section#content article.first #respond submit {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -9028,41 +8958,41 @@ section#content article #respond submit {
   border-color: #ccc;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-section#content article #respond submit:hover,
-section#content article #respond submit:active,
-section#content article #respond submit.active,
-section#content article #respond submit.disabled,
-section#content article #respond submit[disabled] {
+section#content article.first #respond submit:hover,
+section#content article.first #respond submit:active,
+section#content article.first #respond submit.active,
+section#content article.first #respond submit.disabled,
+section#content article.first #respond submit[disabled] {
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
-section#content article #respond submit:active,
-section#content article #respond submit.active {
+section#content article.first #respond submit:active,
+section#content article.first #respond submit.active {
   background-color: #cccccc \9;
 }
-section#content article #respond submit:hover,
-section#content article #respond submit:active,
-section#content article #respond submit.active,
-section#content article #respond submit.disabled,
-section#content article #respond submit[disabled] {
+section#content article.first #respond submit:hover,
+section#content article.first #respond submit:active,
+section#content article.first #respond submit.active,
+section#content article.first #respond submit.disabled,
+section#content article.first #respond submit[disabled] {
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
-section#content article #respond submit:active,
-section#content article #respond submit.active {
+section#content article.first #respond submit:active,
+section#content article.first #respond submit.active {
   background-color: #cccccc \9;
 }
-section#content article #respond submit:first-child {
+section#content article.first #respond submit:first-child {
   *margin-left: 0;
 }
-section#content article #respond submit:first-child {
+section#content article.first #respond submit:first-child {
   *margin-left: 0;
 }
-section#content article #respond textarea {
+section#content article.first #respond textarea {
   width: 500px;
   height: 120px;
 }
-section#content article .thumb {
+section#content article.first .thumb {
   width: 180px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -9071,10 +9001,10 @@ section#content article .thumb {
   font-weight: bold;
   display: inline-block;
 }
-section#content article .thumb:nth-child(3n+3) {
+section#content article.first .thumb:nth-child(3n+3) {
   margin-right: 0;
 }
-section#content article #social {
+section#content article.first #social {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -9101,12 +9031,18 @@ section#content article #social {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-section#content article #social blockquote {
+section#content article.first #social blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
-section#content article #social .twitter-share-button {
+section#content article.first #social .twitter-share-button {
   margin-bottom: -2px;
+}
+section#content #recent h3 {
+  margin: 5px 0;
+}
+section#content #recent .odd {
+  clear: left;
 }
 footer {
   margin-top: 20px;

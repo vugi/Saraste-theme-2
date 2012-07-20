@@ -6330,28 +6330,28 @@ footer section#contact {
     float: left;
     margin-left: 20px;
   }
-  section#content article #recent {
+  section#content #recent {
     margin-left: -20px;
     *zoom: 1;
     *zoom: 1;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent div {
+  section#content #recent div {
     width: 47%;
   }
   section#content aside {
@@ -6755,29 +6755,29 @@ footer section#contact {
     width: auto;
     margin: 0;
   }
-  section#content article #recent {
+  section#content #recent {
     margin-left: 0;
     *zoom: 1;
     *zoom: 1;
     margin-left: 0;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent div {
+  section#content #recent div {
     width: 47%;
   }
   section#content aside {
@@ -7087,28 +7087,28 @@ footer section#contact {
     float: left;
     margin-left: 1.5%;
   }
-  section#content article #recent {
+  section#content #recent {
     margin-left: -1.5%;
     *zoom: 1;
     *zoom: 1;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent div {
+  section#content #recent div {
     width: 47%;
   }
   section#content aside {
@@ -7917,28 +7917,28 @@ footer section#contact {
     float: left;
     margin-left: 12px;
   }
-  section#content article #recent {
+  section#content #recent {
     margin-left: -12px;
     *zoom: 1;
     *zoom: 1;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent:before,
-  section#content article #recent:after {
+  section#content #recent:before,
+  section#content #recent:after {
     display: table;
     content: "";
   }
-  section#content article #recent:after {
+  section#content #recent:after {
     clear: both;
   }
-  section#content article #recent div {
+  section#content #recent div {
     width: 47%;
   }
   section#content aside {

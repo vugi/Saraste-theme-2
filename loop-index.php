@@ -40,9 +40,9 @@
 			<div id="recent">
 		<?php endif; ?>
 		<?php $first = 0; ?>
+	</div>
 	<?php endwhile; ?>
 		</div>
-	</div>
 <?php else: ?>
 	<?php get_404_template(); ?>
  <?php endif; ?>

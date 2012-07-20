@@ -1,10 +1,10 @@
 <?php $first = 1; ?>
 <?php $odd = 1; ?>
 <?php if ( have_posts() ) : ?>
-	<article>
 	<?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>
 		<?php if($first && is_sticky()) : ?>
+	<article>
 			<a href="<?php the_permalink(); ?>">
 				<?php
 					if (has_post_thumbnail('article-big')) {
@@ -15,8 +15,10 @@
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
 			<?php the_content('Lue lisää &rarr;'); ?> 
+	</article>
 		<?php else : ?>
 			<div<?php if($odd) echo ' class="odd"'; ?>>
+      <article>
 				<a href="<?php the_permalink(); ?>">
 					<?php
 						if (has_post_thumbnail('article-small')) {
@@ -29,6 +31,7 @@
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
 				<?php the_excerpt(); ?>
+        </article>
 			</div>
 			<?php $odd = ($odd ? 0 : 1); ?>
 		<?php endif; ?>
@@ -38,7 +41,6 @@
 		<?php $first = 0; ?>
 	<?php endwhile; ?>
 		</div>
-	</article>
 <?php else: ?>
 	<?php get_404_template(); ?>
  <?php endif; ?>

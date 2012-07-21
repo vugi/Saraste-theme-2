@@ -1,5 +1,5 @@
 ﻿<?php get_header(); ?>
-<article>
+<div class="articles">
 	<h2>Kajaus</h2>
 	<?php if ( have_posts() ) : ?>
 	<?php $count = $wp_query->found_posts; ?>
@@ -10,5 +10,5 @@
 			</a>
 		<?php endwhile; ?>
 	<?php endif; ?>
-</article>
+</div>
 <?php get_footer(); ?>

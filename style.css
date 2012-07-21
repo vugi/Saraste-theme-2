@@ -6170,8 +6170,7 @@ a.badge:hover {
 		CUSTOM GRID
 		https://github.com/twitter/bootstrap/issues/2448
 		https://gist.github.com/2834636
-   ========================================================================== */
-header {
+   ========================================================================== */header {
   margin-left: -20px;
   *zoom: 1;
   *zoom: 1;
@@ -6213,14 +6212,32 @@ section#content:after {
 section#content:after {
   clear: both;
 }
-section#content .articles,
-section#content .page article,
-section#content .single article,
-section#content .search article,
-section#content .archive article {
+section#content article,
+section#content .articles {
   width: 580px;
   float: left;
   margin-left: 20px;
+}
+section#content .articles article {
+  margin-left: -20px;
+  *zoom: 1;
+  *zoom: 1;
+}
+section#content .articles article:before,
+section#content .articles article:after {
+  display: table;
+  content: "";
+}
+section#content .articles article:after {
+  clear: both;
+}
+section#content .articles article:before,
+section#content .articles article:after {
+  display: table;
+  content: "";
+}
+section#content .articles article:after {
+  clear: both;
 }
 section#content #recent {
   margin-left: -20px;
@@ -6541,15 +6558,34 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles,
-  section#content .page article,
-  section#content .single article,
-  section#content .search article,
-  section#content .archive article {
+  section#content article,
+  section#content .articles {
     float: none;
     display: block;
     width: auto;
     margin: 0;
+  }
+  section#content .articles article {
+    margin-left: 0;
+    *zoom: 1;
+    *zoom: 1;
+    margin-left: 0;
+  }
+  section#content .articles article:before,
+  section#content .articles article:after {
+    display: table;
+    content: "";
+  }
+  section#content .articles article:after {
+    clear: both;
+  }
+  section#content .articles article:before,
+  section#content .articles article:after {
+    display: table;
+    content: "";
+  }
+  section#content .articles article:after {
+    clear: both;
   }
   section#content #recent {
     margin-left: 0;
@@ -6892,14 +6928,32 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles,
-  section#content .page article,
-  section#content .single article,
-  section#content .search article,
-  section#content .archive article {
+  section#content article,
+  section#content .articles {
     width: 61%;
     float: left;
     margin-left: 1.5%;
+  }
+  section#content .articles article {
+    margin-left: -1.5%;
+    *zoom: 1;
+    *zoom: 1;
+  }
+  section#content .articles article:before,
+  section#content .articles article:after {
+    display: table;
+    content: "";
+  }
+  section#content .articles article:after {
+    clear: both;
+  }
+  section#content .articles article:before,
+  section#content .articles article:after {
+    display: table;
+    content: "";
+  }
+  section#content .articles article:after {
+    clear: both;
   }
   section#content #recent {
     margin-left: -1.5%;
@@ -7223,14 +7277,32 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles,
-  section#content .page article,
-  section#content .single article,
-  section#content .search article,
-  section#content .archive article {
+  section#content article,
+  section#content .articles {
     width: 448px;
     float: left;
     margin-left: 12px;
+  }
+  section#content .articles article {
+    margin-left: -12px;
+    *zoom: 1;
+    *zoom: 1;
+  }
+  section#content .articles article:before,
+  section#content .articles article:after {
+    display: table;
+    content: "";
+  }
+  section#content .articles article:after {
+    clear: both;
+  }
+  section#content .articles article:before,
+  section#content .articles article:after {
+    display: table;
+    content: "";
+  }
+  section#content .articles article:after {
+    clear: both;
   }
   section#content #recent {
     margin-left: -12px;

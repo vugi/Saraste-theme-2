@@ -15,7 +15,7 @@ Version: 2.0.0
 		CUSTOM GRID
 		https://github.com/twitter/bootstrap/issues/2448
 		https://gist.github.com/2834636
-   ========================================================================== */
+   ========================================================================== */   
    
 #responsive-grid {   
     .grid(@gridColumnWidth, @gridGutterWidth){   //Generate our custom grid
@@ -49,9 +49,12 @@ Version: 2.0.0
 		section#content {
 			.row();
 			
-			.articles, .page article, .single article, .search article, .archive article {
+			article, .articles {
 				.span(10);
 			}
+      .articles article {
+        .row();
+      }
 			#recent {
 				.row();
 				article { .span(5); }

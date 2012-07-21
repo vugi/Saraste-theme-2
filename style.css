@@ -6218,25 +6218,25 @@ section#content .articles {
   float: left;
   margin-left: 20px;
 }
-section#content .articles article {
+section#content .articles #recent article {
   margin-left: -20px;
   *zoom: 1;
   *zoom: 1;
 }
-section#content .articles article:before,
-section#content .articles article:after {
+section#content .articles #recent article:before,
+section#content .articles #recent article:after {
   display: table;
   content: "";
 }
-section#content .articles article:after {
+section#content .articles #recent article:after {
   clear: both;
 }
-section#content .articles article:before,
-section#content .articles article:after {
+section#content .articles #recent article:before,
+section#content .articles #recent article:after {
   display: table;
   content: "";
 }
-section#content .articles article:after {
+section#content .articles #recent article:after {
   clear: both;
 }
 section#content #recent {
@@ -6565,26 +6565,26 @@ footer section#contact {
     width: auto;
     margin: 0;
   }
-  section#content .articles article {
+  section#content .articles #recent article {
     margin-left: 0;
     *zoom: 1;
     *zoom: 1;
     margin-left: 0;
   }
-  section#content .articles article:before,
-  section#content .articles article:after {
+  section#content .articles #recent article:before,
+  section#content .articles #recent article:after {
     display: table;
     content: "";
   }
-  section#content .articles article:after {
+  section#content .articles #recent article:after {
     clear: both;
   }
-  section#content .articles article:before,
-  section#content .articles article:after {
+  section#content .articles #recent article:before,
+  section#content .articles #recent article:after {
     display: table;
     content: "";
   }
-  section#content .articles article:after {
+  section#content .articles #recent article:after {
     clear: both;
   }
   section#content #recent {
@@ -6934,25 +6934,25 @@ footer section#contact {
     float: left;
     margin-left: 1.5%;
   }
-  section#content .articles article {
+  section#content .articles #recent article {
     margin-left: -1.5%;
     *zoom: 1;
     *zoom: 1;
   }
-  section#content .articles article:before,
-  section#content .articles article:after {
+  section#content .articles #recent article:before,
+  section#content .articles #recent article:after {
     display: table;
     content: "";
   }
-  section#content .articles article:after {
+  section#content .articles #recent article:after {
     clear: both;
   }
-  section#content .articles article:before,
-  section#content .articles article:after {
+  section#content .articles #recent article:before,
+  section#content .articles #recent article:after {
     display: table;
     content: "";
   }
-  section#content .articles article:after {
+  section#content .articles #recent article:after {
     clear: both;
   }
   section#content #recent {
@@ -7283,25 +7283,25 @@ footer section#contact {
     float: left;
     margin-left: 12px;
   }
-  section#content .articles article {
+  section#content .articles #recent article {
     margin-left: -12px;
     *zoom: 1;
     *zoom: 1;
   }
-  section#content .articles article:before,
-  section#content .articles article:after {
+  section#content .articles #recent article:before,
+  section#content .articles #recent article:after {
     display: table;
     content: "";
   }
-  section#content .articles article:after {
+  section#content .articles #recent article:after {
     clear: both;
   }
-  section#content .articles article:before,
-  section#content .articles article:after {
+  section#content .articles #recent article:before,
+  section#content .articles #recent article:after {
     display: table;
     content: "";
   }
-  section#content .articles article:after {
+  section#content .articles #recent article:after {
     clear: both;
   }
   section#content #recent {

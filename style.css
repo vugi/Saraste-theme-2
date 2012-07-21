@@ -6263,6 +6263,7 @@ section#content #recent:after {
 section#content #recent:after {
   clear: both;
 }
+section#content #recent div,
 section#content #recent article {
   width: 280px;
   float: left;
@@ -6615,6 +6616,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
+  section#content #recent div,
   section#content #recent article {
     float: none;
     display: block;
@@ -6985,6 +6987,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
+  section#content #recent div,
   section#content #recent article {
     width: 29.75%;
     float: left;
@@ -7337,6 +7340,7 @@ footer section#contact {
   section#content #recent:after {
     clear: both;
   }
+  section#content #recent div,
   section#content #recent article {
     width: 218px;
     float: left;

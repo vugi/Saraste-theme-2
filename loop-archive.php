@@ -3,7 +3,7 @@
 	<div id="recent">
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
-			<div<?php if($odd) echo ' class="odd"'; ?>>
+			<article<?php if($odd) echo ' class="odd"'; ?>>
 				<a href="<?php the_permalink(); ?>">
 					<?php
 						if (has_post_thumbnail('article-small')) {
@@ -16,7 +16,7 @@
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
 				<?php the_excerpt(); ?>
-			</div>
+			</article>
 			<?php $odd = ($odd ? 0 : 1); ?>
 		<?php endwhile; ?>
 	</div>

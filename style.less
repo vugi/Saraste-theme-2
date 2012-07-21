@@ -38,6 +38,9 @@ Version: 2.0.0
         .row() when(@gridColumnWidth = auto){ 
             margin-left: 0;
         }
+        .row0() { 
+            margin-left: 0;
+        }
         .offset (@columns) {
 			margin-left: (40 * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
         }
@@ -56,8 +59,7 @@ Version: 2.0.0
         .row();
       }
       .articles article.first {
-        .span(10);
-        .row();
+        .row0();
       }
 			#recent {
 				.row();

@@ -29,7 +29,7 @@
 	<script src="<?php bloginfo('template_directory'); ?>/lib/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body <?php body_class($class); ?>>
 	<div id="fb-root"></div>
 	<div id="responsive-grid" class="container">
 		<img src="http://placehold.it/940x400" alt="" id="cover">

@@ -6213,7 +6213,11 @@ section#content:after {
 section#content:after {
   clear: both;
 }
-section#content .articles {
+section#content .articles,
+section#content .page article,
+section#content .single article,
+section#content .search article,
+section#content .archive article {
   width: 580px;
   float: left;
   margin-left: 20px;
@@ -6537,7 +6541,11 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles {
+  section#content .articles,
+  section#content .page article,
+  section#content .single article,
+  section#content .search article,
+  section#content .archive article {
     float: none;
     display: block;
     width: auto;
@@ -6884,7 +6892,11 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles {
+  section#content .articles,
+  section#content .page article,
+  section#content .single article,
+  section#content .search article,
+  section#content .archive article {
     width: 61%;
     float: left;
     margin-left: 1.5%;
@@ -7211,7 +7223,11 @@ footer section#contact {
   section#content:after {
     clear: both;
   }
-  section#content .articles {
+  section#content .articles,
+  section#content .page article,
+  section#content .single article,
+  section#content .search article,
+  section#content .archive article {
     width: 448px;
     float: left;
     margin-left: 12px;

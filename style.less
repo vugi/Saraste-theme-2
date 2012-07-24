@@ -38,9 +38,7 @@ Version: 2.0.0
         .row() when(@gridColumnWidth = auto){ 
             margin-left: 0;
         }
-        .row0() { 
-            margin-left: 0;
-        }
+		
         .offset (@columns) {
 			margin-left: (40 * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
         }
@@ -52,15 +50,18 @@ Version: 2.0.0
 		section#content {
 			.row();
 			
+			.articles {
+				.row();
+			}
+			
 			article, .articles {
 				.span(10);
 			}
-      .articles article {
-        .row();
-      }
-      .articles article.first {
-        .row0();
-      }
+			
+			article.first {
+				margin-left: 0 !important;
+			}
+
 			#recent {
 				.row();
 				div, article { .span(5); }
@@ -72,6 +73,7 @@ Version: 2.0.0
 					.row();
 					div { .span(3);	}
 				}
+				overflow: hidden;
 			}
 		}
 
@@ -88,11 +90,15 @@ Version: 2.0.0
 			section#content {
 				.row();
 				
-				article.first {
+				article, .articles {
 					.span(12);
-				
 				}
-        #recent {
+				
+				article.first {
+					width: 100%;
+				}
+				
+				#recent {
 					.row();
 					article { width: 47%; }
 				}

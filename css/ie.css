@@ -1,5 +1,12 @@
-﻿nav {
-	background-image: url(../img/navbar-bg.png);
+﻿body {
+	background-image: url(../img/body-bg-400.jpg);
+}
+
+header h1 {
+	background:transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#700000000', endColorstr='#700000000'); /* IE6 & IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#81a8cb', endColorstr='#cde6f9')"; /* IE8 */
+	zoom: 1;
 }
 
 footer {

@@ -7,8 +7,6 @@
 	
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css" />
 	
-	<script src="http://www.jonnen.es/saraste/wp-content/themes/Saraste-theme/js/css3-mediaqueries.js" type="text/javascript"></script>
-	
 	<!--[if lt IE 9]>
 		<script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/ie.css" />

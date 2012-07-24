@@ -1,0 +1,12 @@
+﻿nav {
+	background-image: url(../img/navbar-bg.png);
+}
+
+footer {
+	background: url('../img/footer-bg.jpg') 20px 0 no-repeat;
+	padding: 350px 0 20px 0;
+}
+
+	footer section#sitemap {
+		background: white;
+	}

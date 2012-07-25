@@ -1,12 +1,18 @@
 ﻿body {
-	background-image: url(../img/body-bg-400.jpg);
+	background-image: url(../img/body-bg-400.jpg) fixed repeat-x;
 }
 
 header h1 {
+	padding-left: 20px;
+	margin-left: -40px !important;
 	background:transparent;
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#700000000', endColorstr='#700000000'); /* IE6 & IE7 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#81a8cb', endColorstr='#cde6f9')"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#700000000', endColorstr='#700000000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#700000000', endColorstr='#700000000')";
 	zoom: 1;
+}
+
+header input {
+	color: #000 !important;
 }
 
 footer {

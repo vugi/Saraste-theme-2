@@ -1,5 +1,10 @@
 $(function(){
-
+  
+  var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+	if(width < 979){
+    return;
+  }
+  
   $container = $("#flickrCarousel .carousel-inner");
   
   var parameters = { 
@@ -15,8 +20,15 @@ $(function(){
       $(data.photoset.photo).each(function(i,item){
         var url ="http://farm"+item.farm+".static.flickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_b.jpg";
         var itemClass = "item";
-        if(i==0){ itemClass += " active" }
         $container.append('<div class="'+itemClass+'" style="background-image: url('+url+');"></div>');
+        if(i==0){ 
+          var img = new Image();
+          img.src = url;
+          img.onload = function(){
+            $("#flickrCarousel").carousel('next');
+            $("#flickrCarousel .placeholder").remove();
+          }
+        }
       });
     $("#flickrCarousel").carousel({
       interval: 5000

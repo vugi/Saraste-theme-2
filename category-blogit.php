@@ -11,6 +11,7 @@
 		<h3 class="blogs"><a href="<?php echo get_category_link($cat->cat_ID); ?>"><?php single_cat_title(); ?></a></h3>
 		<p><?php echo category_description($cat->cat_ID); ?></p>
 		
+		<h4>2 uusinta kirjoitusta</h4>
 		<?php $odd = 1; ?>
 		<div id="recent">
 			<?php while (have_posts()) : the_post(); ?>
@@ -30,6 +31,7 @@
 				</article>
 				<?php $odd = ($odd ? 0 : 1); ?>
 			<?php endwhile; ?>
+			<ul class="pager"><li><a href="<?php echo get_category_link($cat->cat_ID); ?>">Lue lisää kirjoituksia tästä blogista</a></li></ul>
 		</div>
 		<?php $first = 0; ?>
 	<?php endforeach; ?> 

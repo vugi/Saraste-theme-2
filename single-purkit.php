@@ -44,8 +44,8 @@
 						}
 						
 						if(get_post_meta($post->ID, "Sijainti", true)){
-							echo '<p class="meta"><span>Sijainti</span>';
-							echo '<div id="map_container"><div id="map_small"></div></div></p>';
+							echo '<p class="meta visible-desktop"><span>Sijainti</span>';
+							echo '<div id="map_container" class="visible-desktop"><div id="map_small"></div></div></p>';
 							echo '<span class="hidden">' . get_post_meta(get_the_ID(), "Sijainti", true) . '</span><div style="clear: both;"></div>';
 						}
 						

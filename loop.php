@@ -3,7 +3,7 @@
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 			<?php
-				if (has_post_thumbnail()) {
+				if (has_post_thumbnail() && is_single()) {
 					the_post_thumbnail('article-big');
 				} 
 			?>

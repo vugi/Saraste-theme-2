@@ -2,10 +2,9 @@
 	<article>
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
-
 			<?php
-				if (has_post_thumbnail('article-big')) {
-					the_post_thumbnail();
+				if (has_post_thumbnail()) {
+					the_post_thumbnail('article-big');
 				} 
 			?>
 			<?php if(is_category()) : ?>

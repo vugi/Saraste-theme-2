@@ -39,8 +39,8 @@
 				<?php endif; ?>
 				<?php $first = 0; ?>
 			<?php endwhile; ?>
-			<ul class="pager clear"><li><a href="<?php echo get_category_link(1); ?>">Siirry arkistoon</a></li></ul>
 		</div>
+	<ul class="pager" style="margin-top: 20px;"><li><a href="<?php echo get_category_link(1); ?>">Siirry arkistoon</a></li></ul>
 	<?php else: ?>
 		<?php get_404_template(); ?>
 	<?php endif; ?>

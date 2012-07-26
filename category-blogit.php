@@ -13,7 +13,7 @@
 		
 		<h4>2 uusinta kirjoitusta</h4>
 		<?php $odd = 1; ?>
-		<div id="recent">
+		<div class="recent">
 			<?php while (have_posts()) : the_post(); ?>
 				<article<?php if($odd) echo ' class="odd"'; ?>>
 					<a href="<?php the_permalink(); ?>">

@@ -35,7 +35,7 @@
 					<?php $odd = ($odd ? 0 : 1); ?>
 				<?php endif; ?>
 				<?php if($first) : ?>
-					<div id="recent">
+					<div class="recent">
 				<?php endif; ?>
 				<?php $first = 0; ?>
 			<?php endwhile; ?>

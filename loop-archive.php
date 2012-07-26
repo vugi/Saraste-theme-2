@@ -1,6 +1,6 @@
 <?php $odd = 1; ?>
 <?php if ( have_posts() ) : ?>
-	<div id="recent">
+	<div class="recent">
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 			<article<?php if($odd) echo ' class="odd"'; ?>>

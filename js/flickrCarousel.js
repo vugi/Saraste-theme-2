@@ -9,6 +9,7 @@ $(function(){
   var imgUrls = [];
   var currentImage = -1;
   var timeout = 5000;
+  var startupTimeout = 2000;
   
   var parameters = { 
     api_key: "1f9dd955965f845c4828845466c99e02",
@@ -39,7 +40,7 @@ $(function(){
         var url = "http://farm"+item.farm+".static.flickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_b.jpg";
         imgUrls.push(url);
       });
-      setTimeout(loadNextImage,timeout);
+      setTimeout(loadNextImage,startupTimeout);
       $("#flickrCarousel").carousel({
         interval: timeout
       }).carousel('pause'); 

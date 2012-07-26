@@ -868,9 +868,11 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .hero-unit p{font-size:18px;font-weight:200;line-height:27px;color:inherit;}
 .pull-right{float:right;}
 .pull-left{float:left;}
+.clear{clear:both;}
 .hide{display:none;}
 .show{display:block;}
 .invisible{visibility:hidden;}
+.clear{clear:both;}
 header{margin-left:-20px;*zoom:1;*zoom:1;}header:before,header:after{display:table;content:"";}
 header:after{clear:both;}
 header:before,header:after{display:table;content:"";}

@@ -23,8 +23,8 @@
 .purkit > .meta {
 	margin: 3px 0;
 	position: relative;
-	font-size: 13px;
-	color: inherit;
+	font-size: 13px !important;
+	color: inherit !important;
 }
 
 	.purkit > .meta > span:first-child {
@@ -88,7 +88,7 @@
 	height: 14px;
 	line-height: 14px;
 	vertical-align: text-top;
-	background-image: url('lib/bootstrap/img/glyphicons-halflings.png');
+	background-image: url('../lib/bootstrap/img/glyphicons-halflings.png');
 	background-position: -120px 0;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -114,7 +114,7 @@
 }
 
 #map_small, #map_container {
-	width: 460px;
+	width: 480px;
 	height: 300px;
 	float: right;
 }

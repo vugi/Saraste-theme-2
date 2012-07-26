@@ -949,5 +949,5 @@ footer section#contact{margin-top:100px;padding:10px 0;}footer section#contact a
 footer section#contact img{margin-top:-60px;float:right;}
 #flickrCarousel{width:100%;height:400px;margin:0 0 -190px 0;overflow:hidden;}#flickrCarousel .item{background-repeat:no-repeat;background-position:center center;width:100%;height:400px;}
 #flickrCarousel .placeholder{background:url('img/footer-bg.jpg') 0 0 no-repeat;}
-#flickrCarousel .loader{position:absolute;top:50%;left:50%;z-index:100;}
+#flickrCarousel .loader{position:absolute;top:10px;right:10px;z-index:100;}
 @media (max-width:979px){#flickrCarousel{display:none;}}

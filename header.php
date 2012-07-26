@@ -39,13 +39,8 @@
 	<div id="responsive-grid" class="container">
 		<div id="flickrCarousel" class="carousel slide">
 			<div class="carousel-inner">
-				<div class="item active placeholder">
-					<!--<div class="loader">
-						Ladataan..
-					</div>-->
-				</div>
+				<div class="item active placeholder"></div>
 			</div>
-
 		</div>
 		<header>
 			<a id="logo" href="<?php echo home_url(); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/img/saraste-logo-badge.png" alt=""></a>

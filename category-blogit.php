@@ -31,8 +31,8 @@
 				</article>
 				<?php $odd = ($odd ? 0 : 1); ?>
 			<?php endwhile; ?>
-			<ul class="pager"><li><a href="<?php echo get_category_link($cat->cat_ID); ?>">Lue lisää kirjoituksia tästä blogista</a></li></ul>
 		</div>
+			<ul class="pager"><li><a href="<?php echo get_category_link($cat->cat_ID); ?>">Lue lisää kirjoituksia tästä blogista</a></li></ul>
 		<?php $first = 0; ?>
 	<?php endforeach; ?> 
 </div>

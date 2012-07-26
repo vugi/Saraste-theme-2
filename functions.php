@@ -206,7 +206,7 @@ if(function_exists('register_post_type')){
 						'public' => true,
 						'show_ui' => true,
 						'show_in_menu' => true,
-						'menu_position' => 25,
+						'menu_position' => 20,
 						'supports' => array('title', 'custom-fields', 'comments'),
 						'has_archive' => true,
 								);

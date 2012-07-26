@@ -39,7 +39,7 @@ $(function(){
         var url = "http://farm"+item.farm+".static.flickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_b.jpg";
         imgUrls.push(url);
       });
-      loadImage(0);
+      setTimeout(loadNextImage,timeout);
       $("#flickrCarousel").carousel({
         interval: timeout
       }).carousel('pause'); 
@@ -52,7 +52,8 @@ $(function(){
     }
     if (currentImage+1 < imgUrls.length){
       setTimeout(loadNextImage,timeout);
-    } else if (currentImage+1 == imgUrls.length) {
+    } 
+    else if (currentImage+1 == imgUrls.length) {
       console.log("start normal cycle");
       $("#flickrCarousel").carousel('cycle');
       currentImage++;

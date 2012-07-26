@@ -40,9 +40,9 @@
 		<div id="flickrCarousel" class="carousel slide">
 			<div class="carousel-inner">
 				<div class="item active placeholder">
-					<div class="loader">
+					<!--<div class="loader">
 						Ladataan..
-					</div>
+					</div>-->
 				</div>
 			</div>
 

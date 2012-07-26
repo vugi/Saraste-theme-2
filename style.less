@@ -342,20 +342,24 @@ footer {
 	height: 400px;
 	margin: 0 0 -190px 0;
 	overflow: hidden;
-	background-color: #ddd;
-	
-	.loader {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		z-index: 100;
-	}
+	//background-color: lighten(#6B812E, 20%);
 	
 	.item {
 		background-repeat: no-repeat;
 		background-position: center center;
 		width: 100%;
 		height: 400px;
+	}
+	
+	.placeholder {
+		background: ~"url('img/footer-bg.jpg')" 0 0 no-repeat;
+	}
+	
+	.loader {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 100;
 	}
 }
 

@@ -6,8 +6,8 @@
 			<article<?php if($odd) echo ' class="odd"'; ?>>
 				<a href="<?php the_permalink(); ?>">
 					<?php
-						if (has_post_thumbnail('article-small')) {
-							the_post_thumbnail();
+						if (has_post_thumbnail()) {
+							the_post_thumbnail('article-small');
 						} else {
 							echo '<img src="' . get_bloginfo( 'template_directory') . '/img/default-thumb.jpg" alt="">';
 						}

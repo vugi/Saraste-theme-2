@@ -38,7 +38,7 @@
 						foreach($fields as $field){
 							if(get_post_meta($post->ID, $field, true)){
 								$meta = get_post_meta(get_the_ID(), $field, true);
-								echo '<p class="meta"><span>' . $field . '">' . $field . '</span><span>' . ($field == "Vaikeusaste" ? purkit_taso($meta) : $meta) . '</span></p>';
+								echo '<p class="meta ' . $field . '"><span>' . $field . '</span><span>' . ($field == "Vaikeusaste" ? purkit_taso($meta) : $meta) . '</span></p>';
 							}
 						}
 						

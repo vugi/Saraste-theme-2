@@ -31,7 +31,7 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				<article class="purkit">
-					<h2><?php the_title(); ?></h2>
+					<h2><?php the_title(); ?><a href="http://www.saraste2012.fi/leirilaisille/purkit" class="btn pull-right">&larr; Palaa purkkiarkistoon</a></h2>
 					<p><?php echo get_post_meta(get_the_ID(), 'Kuvaus', true);	?></p>
 					<?php
 						$fields = array("Lippukunta", "Vaikeusaste", "Ohjeet");

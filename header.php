@@ -32,13 +32,7 @@
 	<?php wp_enqueue_script('social', get_bloginfo('template_directory') . '/js/social.js'); ?>
 	<script src="<?php bloginfo('template_directory'); ?>/lib/bootstrap/js/bootstrap.min.js"></script>
 	
-	<script type="text/javascript">
-	$(function(){
-		$("#flickrCarousel").carousel({
-			interval: 3000
-		});
-	})
-	</script>
+	<?php wp_enqueue_script('flickrCarousel', get_bloginfo('template_directory') . '/js/flickrCarousel.js', array('jquery')); ?>
 </head>
 
 <body <?php body_class($class); ?>>
@@ -46,10 +40,6 @@
 	<div id="responsive-grid" class="container">
 		<div id="flickrCarousel" class="carousel slide">
 			<div class="carousel-inner">
-				<div class="item active" style="background-image: url(http://farm8.staticflickr.com/7254/7630874242_22cf613a2d_b.jpg);"></div>
-				<div class="item" style="background-image: url(http://farm9.staticflickr.com/8429/7630875552_7cefae98ae_b.jpg);"></div>
-				<div class="item" style="background-image: url(http://farm9.staticflickr.com/8163/7630874866_999b46b957_b.jpg);"></div>
-				<div class="item" style="background-image: url(http://farm8.staticflickr.com/7279/7630875210_347ea76147_b.jpg);"></div>
 			</div>
 			<a class="left carousel-control" href="#flickrCarousel" data-slide="prev">&lsaquo;</a>
 			<a class="right carousel-control" href="#flickrCarousel" data-slide="next">&rsaquo;</a>

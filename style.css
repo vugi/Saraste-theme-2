@@ -950,6 +950,6 @@ footer section#sitemap ul li ul{list-style-type:none;width:auto;margin:2px 0 0;}
 footer section#contact{margin-top:100px;padding:10px 0;}footer section#contact address{margin-left:15px;float:left;}
 footer section#contact img{margin-top:-60px;float:right;}
 #flickrCarousel{width:100%;height:400px;margin:0 0 -190px 0;overflow:hidden;}#flickrCarousel .item{background-repeat:no-repeat;background-position:center center;width:100%;height:400px;}
-#flickrCarousel .placeholder{background:url('img/footer-bg.jpg') 0 0 no-repeat;}
+#flickrCarousel .placeholder{background:url('img/footer-bg.jpg') center 0px no-repeat;}
 #flickrCarousel .loader{position:absolute;top:10px;right:10px;z-index:100;}
-@media (max-width:979px){#flickrCarousel{display:none;}}
+@media (max-width:767px){#flickrCarousel{display:none;}}

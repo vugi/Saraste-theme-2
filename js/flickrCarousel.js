@@ -1,7 +1,7 @@
 $(function(){
   
   var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-	if(width < 979){
+	if(width < 768){
     return;
   }
   
@@ -10,6 +10,8 @@ $(function(){
   var currentImage = -1;
   var timeout = 5000;
   var startupTimeout = 2000;
+  
+  var flickrImageSize = (width < 980) ? "c" : "b";
   
   var parameters = { 
     api_key: "1f9dd955965f845c4828845466c99e02",
@@ -37,7 +39,7 @@ $(function(){
     parameters,
     function(data){
       $(data.photoset.photo).each(function(i,item){
-        var url = "http://farm"+item.farm+".static.flickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_b.jpg";
+        var url = "http://farm"+item.farm+".static.flickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_"+flickrImageSize+".jpg";
         imgUrls.push(url);
       });
       setTimeout(loadNextImage,startupTimeout);
@@ -47,7 +49,7 @@ $(function(){
   });
   
   $("#flickrCarousel").on("slid",function(){
-    console.log("slid",currentImage)
+    //console.log("slid",currentImage)
     if (currentImage == 0){
       $("#flickrCarousel .placeholder").remove();
     }
@@ -55,7 +57,7 @@ $(function(){
       setTimeout(loadNextImage,timeout);
     } 
     else if (currentImage+1 == imgUrls.length) {
-      console.log("start normal cycle");
+      //console.log("start normal cycle");
       $("#flickrCarousel").carousel('cycle');
       currentImage++;
     }

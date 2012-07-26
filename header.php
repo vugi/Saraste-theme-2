@@ -31,7 +31,6 @@
 	<?php wp_head(); ?>
 	<?php wp_enqueue_script('social', get_bloginfo('template_directory') . '/js/social.js'); ?>
 	<script src="<?php bloginfo('template_directory'); ?>/lib/bootstrap/js/bootstrap.min.js"></script>
-	
 	<?php wp_enqueue_script('flickrCarousel', get_bloginfo('template_directory') . '/js/flickrCarousel.js', array('jquery')); ?>
 </head>
 
@@ -41,8 +40,6 @@
 		<div id="flickrCarousel" class="carousel slide">
 			<div class="carousel-inner">
 			</div>
-			<a class="left carousel-control" href="#flickrCarousel" data-slide="prev">&lsaquo;</a>
-			<a class="right carousel-control" href="#flickrCarousel" data-slide="next">&rsaquo;</a>
 		</div>
 		<header>
 			<a id="logo" href="<?php echo home_url(); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/img/saraste-logo-badge.png" alt=""></a>

@@ -17,7 +17,7 @@
 		}
 	?>
 	<?php dynamic_sidebar('sivupalkki'); ?>
-	<?php if($post->post_parent == 100) : // Leiriläisille ?>
+	<?php if($post->post_parent == 1008) : // Leiriläisille ?>
 		<a href="http://www.scandinavianoutdoorstore.com/" target="_blank"><img src="http://www.saraste2012.fi/wp-content/uploads/2012/07/scandinavian-outdoor-store-banneri.png" alt="Partiovaruste"></a>
 	<?php endif; ?>
 </aside>

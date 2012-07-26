@@ -1,5 +1,6 @@
 ﻿<?php get_header(); ?>
 
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/purkit.css" />
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
 

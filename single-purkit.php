@@ -1,5 +1,6 @@
 ﻿<?php get_header(); ?>
 
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/purkit.css" />
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
 	function mapInit(){
@@ -30,7 +31,7 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				<article>
 					<h2><?php the_title(); ?></h2>
-					<p><?php	echo get_post_meta(get_the_ID(), 'Kuvaus', true);	?></p>
+					<p><?php echo get_post_meta(get_the_ID(), 'Kuvaus', true);	?></p>
 					<?php
 						$fields = array("Lippukunta", "Vaikeusaste", "Ohjeet");
 						

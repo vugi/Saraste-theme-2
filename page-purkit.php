@@ -76,7 +76,7 @@ jQuery(function(){
 					
 					$purkit = get_posts($args);
 					?>
-					<div id="map"></div>
+					<div id="map" class="visible-desktop"></div>
 					<h2>Kaikki kätköt</h2>
 					<table id="purkit">
 					<tr><th>Nimi</th><th>Vaikeusaste</th><th>Lippukunta</th><th class="hidden">Sijainti</th></tr>

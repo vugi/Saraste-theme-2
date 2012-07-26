@@ -11,8 +11,10 @@
 			}
 			$siblings = wp_list_pages('title_li=&sort_column=menu_order&child_of=' . $parent . '&echo=0&depth=1');
 			if(!empty($siblings) && !empty($parent)){
-				echo '<h2><a href="' . get_permalink($parent) . '">' . get_the_title($parent) . '</a></h2>';
-				echo '<ul>' . $siblings . '</ul>';
+				echo '<div class="well" style="padding: 8px 0;"><ul class="nav nav-list">';
+				echo '<li class="nav-header"><a href="' . get_permalink($parent) . '">' . get_the_title($parent) . '</a></li>';
+				echo $siblings;
+				echo '</ul></div>';
 			}
 		}
 	?>

@@ -161,7 +161,7 @@ p{margin:0 0 9px;}p small{font-size:11px;color:#999999;}
 h1,h2,h3,h4,h5,h6{margin:0;font-family:inherit;font-weight:bold;color:inherit;text-rendering:optimizelegibility;line-height:1.2;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:normal;color:#999999;}
 h1{font-size:30px;}h1 small{font-size:18px;}
 h2{font-size:24px;margin:10px 0 5px;}h2 small{font-size:18px;}
-aside h2{margin:5px 0 10px;}
+aside h2{font-size:22px;margin:5px 0 10px;}
 h3{font-size:18px;margin:5px 0;}h3 small{font-size:14px;}
 aside h3{margin:5px 0 10px;}
 h4{font-size:14px;}h4 small{font-size:12px;}
@@ -329,6 +329,7 @@ legend+.control-group{margin-top:18px;-webkit-margin-top-collapse:separate;}
 .form-horizontal .help-block{margin-top:9px;margin-bottom:0;}
 .form-horizontal .form-actions{padding-left:160px;}
 table{max-width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0;}
+table.sponsorsTable td{text-align:center;width:50%;}
 .table{width:100%;margin-bottom:18px;}.table th,.table td{padding:8px;line-height:18px;text-align:left;vertical-align:top;border-top:1px solid #dddddd;}
 .table th{font-weight:bold;}
 .table thead th{vertical-align:bottom;}

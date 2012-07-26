@@ -51,7 +51,8 @@
 						
 					?>
 					
-				<?php comments_template('/comments-purkit.php', true); ?>
+          <?php comments_template('/comments-purkit.php', true); ?>
+        </article>
 <?php endwhile; ?>
 
 <?php get_footer(); ?>

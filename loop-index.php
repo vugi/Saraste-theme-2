@@ -39,7 +39,7 @@
 				<?php endif; ?>
 				<?php $first = 0; ?>
 			<?php endwhile; ?>
-			<ul class="pager clearfix"><li><a href="<?php echo get_category_link(1); ?>">Siirry arkistoon</a></li></ul>
+			<ul class="pager clear"><li><a href="<?php echo get_category_link(1); ?>">Siirry arkistoon</a></li></ul>
 		</div>
 	<?php else: ?>
 		<?php get_404_template(); ?>

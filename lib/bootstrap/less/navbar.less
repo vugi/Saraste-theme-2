@@ -228,11 +228,10 @@
 }
 
 // Active nav items
-.navbar .nav .active > a,
 .navbar .nav .active > a:hover {
-  color: @navbarLinkColorActive;
   text-decoration: none;
-  background-color: @navbarLinkBackgroundActive;
+  background-color: @linkColor;
+  color: @white;
 }
 
 // Dividers (basically a vertical hr)
@@ -337,7 +336,7 @@
 
 // Dropdown link on hover
 .navbar .nav li.dropdown.active > .dropdown-toggle:hover {
-  color: @white;
+  color: @linkColor;
 }
 
 // Right aligned menus need alt position

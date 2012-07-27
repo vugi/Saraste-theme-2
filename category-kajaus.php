@@ -1,11 +1,11 @@
 ﻿<?php get_header(); ?>
 <?php $i = $wp_query->post_count; ?>
-<div class="articles kajaus">
+<div class="articles">
 	<h2>Kajaus</h2>
 	<p><?php echo category_description($cat->cat_ID); ?></p>
 	<?php if(have_posts()) : ?>
 		<?php while(have_posts()) : ?>
-			<article class="clear">
+			<article class="kajaus">
 				<?php the_post(); ?>
 				<a href="<?php the_permalink(); ?>">
 					<?php

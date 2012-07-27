@@ -5,7 +5,7 @@
 	<p><?php echo category_description($cat->cat_ID); ?></p>
 	<?php if(have_posts()) : ?>
 		<?php while(have_posts()) : ?>
-			<div class="clear">
+			<article class="clear">
 				<?php the_post(); ?>
 				<a href="<?php the_permalink(); ?>">
 					<?php
@@ -17,7 +17,7 @@
 				<h3><a href="<?php the_permalink(); ?>">Kajaus <?php echo $i--; ?>/2012</a></h3>
 				<p class="meta"><?php the_time("j.n.Y"); ?></p>
 				<p><?php the_content('Lue lehti &rarr;'); ?>
-			</div>
+			</article>
 		<?php endwhile; ?>
 	<?php endif; ?>
 </div>

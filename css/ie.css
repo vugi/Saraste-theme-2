@@ -1,5 +1,5 @@
 ﻿body {
-	background-image: url(../img/body-bg-400.jpg) fixed repeat-x;
+	background: url(../img/body-bg-400.jpg) fixed repeat-x;
 }
 
 header h1 {

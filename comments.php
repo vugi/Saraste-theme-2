@@ -17,9 +17,9 @@
 <?php
 
 
-$fields = array('author' => '<p><input type="text" id="author" name="author"><span class="help-inline">Nimi (pakollinen)</span></p>',
-				'email' => '<p><input type="text" id="email" name="email"><span class="help-inline">Sähköposti (pakollinen, ei julkaista)</span></p>',
-				'url' => '<p><input type="text" id="url" name="url"><span class="help-inline">Kotisivu</span></p>');
+$fields = array('author' => '<p><label>Nimi (pakollinen)</label><input type="text" id="author" name="author"></p>',
+				'email' => '<p><label>Sähköposti (pakollinen, ei julkaista)</label><input type="text" id="email" name="email"></p>',
+				'url' => '<p><label>Kotisivu</label><input type="text" id="url" name="url"></p>');
 
 $args = array(	'fields' => $fields,
 				'title_reply' => '',

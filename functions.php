@@ -82,6 +82,24 @@ function saraste_wp_title( $title, $separator ) {
 	return $title;
 }
 
+
+//[alasivut]
+add_shortcode('alasivut', 'alasivut_func');
+function alasivut_func(){
+	global $post;
+
+	if($post->post_parent) {
+		$children = wp_list_pages("title_li=&child_of=" . $post->post_parent . "&echo=0");
+  } else {
+		$children = wp_list_pages("title_li=&child_of=" . $post->ID . "&echo=0");
+  }
+  
+  if($children){
+		$r = '<ul>' . $children . '</ul>';
+		return $r;
+  }
+}
+
 //https://gist.github.com/1597994
 add_action( 'after_setup_theme', 'bootstrap_setup' );
 function bootstrap_setup(){

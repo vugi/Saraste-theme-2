@@ -936,6 +936,8 @@ section#content article #respond submit:hover,section#content article #respond s
 section#content article #respond submit:active,section#content article #respond submit.active{background-color:#cccccc \9;}
 section#content article #respond submit:first-child{*margin-left:0;}
 section#content article #respond submit:first-child{*margin-left:0;}
+section#content article #respond label{float:left;width:70px;padding-top:5px;}
+section#content article #respond input[type="text"]{margin-left:20px;}
 section#content article #respond textarea{width:500px;height:120px;max-width:100%;}
 section#content article .thumb{width:180px;margin-right:20px;margin-bottom:20px;font-size:26px;line-height:30px;font-weight:bold;display:inline-block;}
 section#content article .thumb:nth-child(3n+3){margin-right:0;}

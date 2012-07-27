@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support('automatic-feed-links');
+
 add_theme_support('post-thumbnails'); 
 add_image_size('article-big', 580, 250, true);
 add_image_size('article-small', 280, 120, true);

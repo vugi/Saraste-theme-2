@@ -37,7 +37,7 @@ function saraste_comment($comment, $args, $depth) {
 	<div <?php comment_class('well'); ?> id="comment-<?php comment_ID() ?>">
 		<?php echo get_avatar($comment, 50); ?>
 		<p class="comment-author vcard"><strong><?php comment_author_link(); ?></strong><span style="float: right;"><?php edit_comment_link('Muokkaa'); ?></p>
-		<p class="comment-meta"><a href="#comment-<?php comment_ID() ?>"><?php comment_date('j.n.Y'); ?> klo <?php comment_time('h:i'); ?></a></p>
+		<p class="comment-meta"><a href="#comment-<?php comment_ID() ?>"><?php comment_date('j.n.Y'); ?> klo <?php comment_time('H:i'); ?></a></p>
 		<div class="comment-body"><?php comment_text(); ?></div>
 	</div>
 

@@ -8,6 +8,8 @@ add_image_size('article-small', 280, 120, true);
 add_image_size('sidebar-thumb', 160, 100, true);
 add_image_size('kajaus-cover', 100, 143, true);
 
+update_option('image_default_link_type', 'file');
+
 register_sidebar(array('name' => 'Sivupalkki', 'id' => 'sivupalkki', 'before_widget' => '', 'after_widget' => '', 'before_title' => '<h2>', 'after_title' => '</h2>'));
 register_sidebar(array('name' => 'Yhteystiedot', 'id' => 'contact', 'before_widget' => '<address>', 'after_widget' => '</address>', 'before_title' => '<strong>', 'after_title' => '</strong>'));
 
@@ -37,7 +39,7 @@ function saraste_comment($comment, $args, $depth) {
 	<div <?php comment_class('well'); ?> id="comment-<?php comment_ID() ?>">
 		<?php echo get_avatar($comment, 50); ?>
 		<p class="comment-author vcard"><strong><?php comment_author_link(); ?></strong><span style="float: right;"><?php edit_comment_link('Muokkaa'); ?></p>
-		<p class="comment-meta"><a href="#comment-<?php comment_ID() ?>"><?php comment_date('j.n.Y'); ?> klo <?php comment_time('h:i'); ?></a></p>
+		<p class="comment-meta"><a href="#comment-<?php comment_ID() ?>"><?php comment_date('j.n.Y'); ?> klo <?php comment_time('H:i'); ?></a></p>
 		<div class="comment-body"><?php comment_text(); ?></div>
 	</div>
 

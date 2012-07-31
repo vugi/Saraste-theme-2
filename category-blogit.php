@@ -26,7 +26,7 @@
 						?>
 					</a>
 					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("h:i"); ?> <?php the_author(); ?></p>
+					<p class="meta"><?php the_time("j.n.Y"); ?> klo <?php the_time("H:i"); ?> <?php the_author(); ?></p>
 					<?php the_excerpt(); ?>
 				</article>
 				<?php $odd = ($odd ? 0 : 1); ?>

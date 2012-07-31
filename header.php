@@ -31,7 +31,7 @@
 	<?php wp_head(); ?>
 	<?php wp_enqueue_script('social', get_bloginfo('template_directory') . '/js/social.js'); ?>
 	<script src="<?php bloginfo('template_directory'); ?>/lib/bootstrap/js/bootstrap.min.js"></script>
-	<?php wp_enqueue_script('flickrCarousel', get_bloginfo('template_directory') . '/js/flickrCarousel.js', array('jquery')); ?>
+	<?php wp_enqueue_script('flickrCarousel', get_bloginfo('template_directory') . '/js/flickrCarousel.js', array('jquery'), '1.0'); ?>
 </head>
 
 <body <?php body_class($class); ?>>

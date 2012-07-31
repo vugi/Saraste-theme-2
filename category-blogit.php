@@ -1,7 +1,7 @@
 ﻿<?php get_header(); ?>
 
 <?php $first = 1; ?>
-<?php $categories = get_categories('child_of=' . get_query_var('cat') . '&orderby=count'); ?>
+<?php $categories = get_categories('child_of=' . get_query_var('cat') . '&orderby=id&order=desc'); ?>
 <div class="articles">
 	<h2>Blogit</h2>
 	<?php foreach ($categories as $cat) : ?>

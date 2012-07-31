@@ -17,7 +17,7 @@ $(function(){
     api_key: "1f9dd955965f845c4828845466c99e02",
     format: "json",
     method: "flickr.photosets.getPhotos",
-    photoset_id:"72157630760953584"
+    photoset_id:"72157630839574604"
   };
   
   function loadNextImage(){

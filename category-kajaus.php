@@ -14,7 +14,7 @@
 						} 
 					?>
 				</a>
-				<h3><a href="<?php the_permalink(); ?>"><?php echo ($i == 0 ? 'Ennakko-Kajaus' : 'Kajaus ' . $i . '/2012'); $i--; ?></a></h3>
+				<h3><a href="<?php the_permalink(); ?>"><?php echo ($i == 0 ? 'Kajauksen ennakkonumero' : 'Kajaus ' . $i . '/2012'); $i--; ?></a></h3>
 				<p class="meta"><?php the_time("j.n.Y"); ?></p>
 				<p><?php the_content('Lue lehti &rarr;'); ?>
 			</article>

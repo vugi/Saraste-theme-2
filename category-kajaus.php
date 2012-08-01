@@ -1,5 +1,5 @@
 ﻿<?php get_header(); ?>
-<?php $i = $wp_query->post_count; ?>
+<?php $i = $wp_query->post_count - 1; ?>
 <div class="articles">
 	<h2>Kajaus</h2>
 	<p><?php echo category_description($cat->cat_ID); ?></p>
@@ -14,7 +14,7 @@
 						} 
 					?>
 				</a>
-				<h3><a href="<?php the_permalink(); ?>">Kajaus <?php echo $i--; ?>/2012</a></h3>
+				<h3><a href="<?php the_permalink(); ?>"><?php echo ($i == 0 ? 'Ennakko-Kajaus' : 'Kajaus ' . $i . '/2012'); $i--; ?></a></h3>
 				<p class="meta"><?php the_time("j.n.Y"); ?></p>
 				<p><?php the_content('Lue lehti &rarr;'); ?>
 			</article>
